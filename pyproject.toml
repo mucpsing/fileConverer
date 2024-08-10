@@ -1,14 +1,17 @@
 [project]
-name = "python-tk-ui-learn"
+name = "fileConverer"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [
     {name = "CPS", email = "373704015@qq.com"},
 ]
 dependencies = [
+    "pywin32>=306",
     "windnd>=1.0.7",
     "nuitka>=2.3",
     "pydantic>=2.7.4",
+    "PyMuPDF>=1.24.9",
+    "pillow>=10.4.0",
 ]
 requires-python = "==3.8.*"
 readme = "README.md"
