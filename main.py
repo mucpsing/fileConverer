@@ -2,18 +2,20 @@
 #
 # @Author: CPS
 # @email: 373704015@qq.com
-# @Date: 2024-06-03 09:33:01.385738
+# @Date: 2024-08-11 09:25:15.034273
 # @Last Modified by: CPS
-# @Last Modified time: 2024-06-03 09:33:01.386735
-# @file_path "W:\CPS\MyProject\projsect_persional\python-tk-ui-learn"
+# @Last Modified time: 2024-08-11 09:25:15.034273
+# @file_path "D:\CPS\MyProject\Projects_Personal\fileConverer"
 # @Filename "main.py"
-# @Description: 入口文件
+# @Description: 功能描述
 #
-import sys
+import os, sys
 
 sys.path.append("..")
 
-from src.main_launcher import start_with_ui
+from os import path
+from pathlib import Path
+from pydantic import BaseModel
 
 if __name__ == "__main__":
-    start_with_ui()
+    pass
