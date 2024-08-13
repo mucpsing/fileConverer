@@ -12,6 +12,7 @@
 
 import tkinter, os
 
+
 from tkinter.messagebox import showwarning
 
 from src.ui.main import Application
@@ -20,8 +21,6 @@ from src.events import UI_Events
 
 from src.configEditor_launcher import UI as configEditor_show
 from src.configEditor_launcher import SubWindowConfig
-
-from enum import Enum
 
 
 def check(config: Config):
@@ -33,6 +32,10 @@ def check(config: Config):
 
 
 class UI(UI_Events, Application):
+    DEFAULT_ENCODEING = "gbk"
+    file_list = []  # 存放要处理的文件
+    output_path = ""
+
     # 这个类实现具体的事件处理回调函数。界面生成代码在Application_ui中。
     def __init__(self, config: Config):
         check(config)
@@ -40,8 +43,8 @@ class UI(UI_Events, Application):
         super().__init__(main_tk)
 
         self.master.title(config.title)
-        self.config = config
 
+        self.config = config
         self.configEditor = None  # close 或者 open
 
         screenWidth = main_tk.winfo_screenwidth()  # 获取显示区域的宽度
@@ -52,21 +55,34 @@ class UI(UI_Events, Application):
         self.master.geometry(f"{config.width}x{config.height}+{left}+{top}")
         if config.dragged_file_enable:
             self.init_dragged_file()
+        # self.mianListVar.set(["请将需要转换的word或者pdf文件拖拽至此，点击运行即可"])
 
         self.master.protocol("WM_DELETE_WINDOW", self.on_close)
         self.createWidgets()
+        self.init_after_create()
+
         self.process_start()
+
+    def init_after_create(self):
+        self.mianListVar.set("请将需要转换的word或者pdf文件拖拽至此，点击运行即可")
 
     def process_start(self):
         self.mainloop()
 
+    def set_output_path(self, output_path: str):
+        # self.Text1Var.set(output_path)
+        self.mianListVar.set(output_path)
+
+    def set_mainBtn_text(self, text):
+        self.mainBtn_sel_fileVar = tkinter.StringVar(value="点击打开或者拖拽文件")
+
     def init_dragged_file(self):
         import windnd
 
-        def dragged_files(files, encodeing="gbk"):
-            if len(files) > 1:
-                showwarning("文件太多", "仅支持单个文件识别")
-            self.Text1Var.set(files[0].decode(encodeing))
+        def dragged_files(files):
+            file_list = [each_file.decode(self.DEFAULT_ENCODEING) for each_file in files]
+            self.file_list = file_list
+            self.mianListVar.set(file_list)
 
         windnd.hook_dropfiles(self.master, func=dragged_files)
 
@@ -93,9 +109,7 @@ class UI(UI_Events, Application):
 
 
 def start_with_ui():
-    config = Config
-
-    UI(config)
+    UI(Config())
 
 
 if __name__ == "__main__":

@@ -9,22 +9,15 @@
 # @Filename "word_to_pdf_by_word.py"
 # @Description: 调用系统安装的word进行pdf的转换
 #
-import os, sys
+import os, sys, pathlib
 
 sys.path.append("..")
 
-from os import path
-from pathlib import Path
 from pydantic import BaseModel
-
-if __name__ == "__main__":
-    pass
-
-
-import os, pathlib
-
 from win32com import client
 from pydantic import BaseModel, Field
+
+from typing import List, Union
 
 
 class WORD_CODE:  # 记录所有word代码
@@ -75,7 +68,7 @@ class CpsWordConverter:
         if self.config.show_details:
             print(*argvs, **keys)
 
-    def convert(self, target: str) -> list[str]:
+    def convert(self, target: str) -> List[str]:
         """
         @Description 转换主函数
 
@@ -114,7 +107,7 @@ class CpsWordConverter:
 
         return self.word
 
-    def __dir_handler(self, dir_path: str | pathlib.Path) -> str:
+    def __dir_handler(self, dir_path: Union[str, pathlib.Path]) -> str:
         docx = list(pathlib.Path(dir_path).glob("**/*.docx"))
         doc = list(pathlib.Path(dir_path).glob("**/*.doc"))
 

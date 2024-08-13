@@ -23,7 +23,7 @@ from typing import Tuple, List, NewType
 DIALOG_TYPES = NewType("Tuple[List[str]]", Tuple[List[str]])
 
 
-class DialogTypeT(Enum):
+class DialogTypeT(str, Enum):
     file = "file"
     dir = "dir"
 
@@ -46,15 +46,15 @@ def selectPath(
     """
     try:
         sel_path = ""
-        if dialog_type == DialogTypeT.file.value:
+        if dialog_type == DialogTypeT.file:
             # 选择文件path_接收文件地址
             sel_path = filedialog.askopenfilename(
                 title="选择文件",
-                filetypes=(("*.py", "py"), ("*.txt", "txt")),
+                filetypes=(("*.docx", "docx"), ("*.doc", "doc"), ("*.pdf", "pdf")),
                 initialdir=root,
             )
 
-        elif dialog_type == DialogTypeT.dir.value:
+        elif dialog_type == DialogTypeT.dir:
             # 选择文件path_接收文件地址
             sel_path = filedialog.askdirectory(
                 title="选择目录",
