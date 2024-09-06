@@ -10,4 +10,4 @@
 @echo off && setlocal enabledelayedexpansion
 @chcp 65001
 
-pdm run ui.py
+pdm run main.py

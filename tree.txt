@@ -1,0 +1,1563 @@
+DIR:fileConverer                                                                # 
+   |-- dist/                                                                    # 「dist」
+   |-- main.build/                                                              # 
+   |   |-- static_src/                                                          # 「static_src」
+   |   |   |-- MainProgram.obj                                                  # 
+   |   |   |-- MainProgram.cpp                                                  # 
+   |   |   |-- CompiledFunctionType.obj                                         # 
+   |   |   `-- CompiledFunctionType.cpp                                         # 
+   |   |-- __loader.obj                                                         # 
+   |   |-- __loader.cpp                                                         # 
+   |   |-- __helpers.obj                                                        # 
+   |   |-- __helpers.h                                                          # 
+   |   |-- __helpers.cpp                                                        # 
+   |   |-- __constants.txt                                                      # 
+   |   |-- __constants.obj                                                      # 
+   |   |-- __constants.h                                                        # 
+   |   |-- __constants.cpp                                                      # 
+   |   |-- __constants.const                                                    # 
+   |   |-- __constants.bin                                                      # 
+   |   |-- __bytecode.const                                                     # 
+   |   |-- scons-report.txt                                                     # 
+   |   |-- scons-debug.py                                                       # 
+   |   |-- scons-debug.bat                                                      # 
+   |   |-- module.__parents_main__.obj                                          # 
+   |   |-- module.__parents_main__.cpp                                          # 
+   |   |-- module.__parents_main__.const                                        # 
+   |   |-- module.__main__.obj                                                  # 
+   |   |-- module.__main__.cpp                                                  # 
+   |   |-- module.__main__.const                                                # 
+   |   |-- module.winerror.obj                                                  # 
+   |   |-- module.winerror.cpp                                                  # 
+   |   |-- module.winerror.const                                                # 
+   |   |-- module.windnd.windnd.obj                                             # 
+   |   |-- module.windnd.windnd.cpp                                             # 
+   |   |-- module.windnd.windnd.const                                           # 
+   |   |-- module.windnd.obj                                                    # 
+   |   |-- module.windnd.cpp                                                    # 
+   |   |-- module.windnd.const                                                  # 
+   |   |-- module.win32con.obj                                                  # 
+   |   |-- module.win32con.cpp                                                  # 
+   |   |-- module.win32con.const                                                # 
+   |   |-- module.win32com.obj                                                  # 
+   |   |-- module.win32com.cpp                                                  # 
+   |   |-- module.win32com.const                                                # 
+   |   |-- module.win32com.client.util.obj                                      # 
+   |   |-- module.win32com.client.util.cpp                                      # 
+   |   |-- module.win32com.client.util.const                                    # 
+   |   |-- module.win32com.client.selecttlb.obj                                 # 
+   |   |-- module.win32com.client.selecttlb.cpp                                 # 
+   |   |-- module.win32com.client.selecttlb.const                               # 
+   |   |-- module.win32com.client.obj                                           # 
+   |   |-- module.win32com.client.makepy.obj                                    # 
+   |   |-- module.win32com.client.makepy.cpp                                    # 
+   |   |-- module.win32com.client.makepy.const                                  # 
+   |   |-- module.win32com.client.genpy.obj                                     # 
+   |   |-- module.win32com.client.genpy.cpp                                     # 
+   |   |-- module.win32com.client.genpy.const                                   # 
+   |   |-- module.win32com.client.gencache.obj                                  # 
+   |   |-- module.win32com.client.gencache.cpp                                  # 
+   |   |-- module.win32com.client.gencache.const                                # 
+   |   |-- module.win32com.client.dynamic.obj                                   # 
+   |   |-- module.win32com.client.dynamic.cpp                                   # 
+   |   |-- module.win32com.client.dynamic.const                                 # 
+   |   |-- module.win32com.client.cpp                                           # 
+   |   |-- module.win32com.client.const                                         # 
+   |   |-- module.win32com.client.CLSIDToClass.obj                              # 
+   |   |-- module.win32com.client.CLSIDToClass.cpp                              # 
+   |   |-- module.win32com.client.CLSIDToClass.const                            # 
+   |   |-- module.win32com.client.build.obj                                     # 
+   |   |-- module.win32com.client.build.cpp                                     # 
+   |   |-- module.win32com.client.build.const                                   # 
+   |   |-- module.typing_extensions.obj                                         # 
+   |   |-- module.typing_extensions.cpp                                         # 
+   |   |-- module.typing_extensions.const                                       # 
+   |   |-- module.tkinter-preLoad.obj                                           # 
+   |   |-- module.tkinter-preLoad.cpp                                           # 
+   |   |-- module.tkinter-preLoad.const                                         # 
+   |   |-- module.src.word2pdf.word_to_pdf_by_word.obj                          # 
+   |   |-- module.src.word2pdf.word_to_pdf_by_word.cpp                          # 
+   |   |-- module.src.word2pdf.word_to_pdf_by_word.const                        # 
+   |   |-- module.src.word2pdf.obj                                              # 
+   |   |-- module.src.word2pdf.cpp                                              # 
+   |   |-- module.src.word2pdf.const                                            # 
+   |   |-- module.src.utils.tk_utils.obj                                        # 
+   |   |-- module.src.utils.tk_utils.cpp                                        # 
+   |   |-- module.src.utils.tk_utils.const                                      # 
+   |   |-- module.src.utils.obj                                                 # 
+   |   |-- module.src.utils.cpp                                                 # 
+   |   |-- module.src.utils.const                                               # 
+   |   |-- module.src.ui.obj                                                    # 
+   |   |-- module.src.ui.main.obj                                               # 
+   |   |-- module.src.ui.main.cpp                                               # 
+   |   |-- module.src.ui.main.const                                             # 
+   |   |-- module.src.ui.cpp                                                    # 
+   |   |-- module.src.ui.const                                                  # 
+   |   |-- module.src.ui.configEditor.obj                                       # 
+   |   |-- module.src.ui.configEditor.cpp                                       # 
+   |   |-- module.src.ui.configEditor.const                                     # 
+   |   |-- module.src.pdf_mamanger.obj                                          # 
+   |   |-- module.src.pdf_mamanger.cpp                                          # 
+   |   |-- module.src.pdf_mamanger.const                                        # 
+   |   |-- module.src.obj                                                       # 
+   |   |-- module.src.main_launcher.obj                                         # 
+   |   |-- module.src.main_launcher.cpp                                         # 
+   |   |-- module.src.main_launcher.const                                       # 
+   |   |-- module.src.events.obj                                                # 
+   |   |-- module.src.events.cpp                                                # 
+   |   |-- module.src.events.const                                              # 
+   |   |-- module.src.events.configEditorEvents.obj                             # 
+   |   |-- module.src.events.configEditorEvents.cpp                             # 
+   |   |-- module.src.events.configEditorEvents.const                           # 
+   |   |-- module.src.cpp                                                       # 
+   |   |-- module.src.const                                                     # 
+   |   |-- module.src.configEditor_launcher.obj                                 # 
+   |   |-- module.src.configEditor_launcher.cpp                                 # 
+   |   |-- module.src.configEditor_launcher.const                               # 
+   |   |-- module.src.config.obj                                                # 
+   |   |-- module.src.config.cpp                                                # 
+   |   |-- module.src.config.const                                              # 
+   |   |-- module.pywintypes.obj                                                # 
+   |   |-- module.pywintypes.cpp                                                # 
+   |   |-- module.pywintypes.const                                              # 
+   |   |-- module.pywin32_system32.obj                                          # 
+   |   |-- module.pywin32_system32.cpp                                          # 
+   |   |-- module.pywin32_system32.const                                        # 
+   |   |-- module.pywin.obj                                                     # 
+   |   |-- module.pywin.mfc.window.obj                                          # 
+   |   |-- module.pywin.mfc.window.cpp                                          # 
+   |   |-- module.pywin.mfc.window.const                                        # 
+   |   |-- module.pywin.mfc.thread.obj                                          # 
+   |   |-- module.pywin.mfc.thread.cpp                                          # 
+   |   |-- module.pywin.mfc.thread.const                                        # 
+   |   |-- module.pywin.mfc.object.obj                                          # 
+   |   |-- module.pywin.mfc.object.cpp                                          # 
+   |   |-- module.pywin.mfc.object.const                                        # 
+   |   |-- module.pywin.mfc.obj                                                 # 
+   |   |-- module.pywin.mfc.dialog.obj                                          # 
+   |   |-- module.pywin.mfc.dialog.cpp                                          # 
+   |   |-- module.pywin.mfc.dialog.const                                        # 
+   |   |-- module.pywin.mfc.cpp                                                 # 
+   |   |-- module.pywin.mfc.const                                               # 
+   |   |-- module.pywin.dialogs.status.obj                                      # 
+   |   |-- module.pywin.dialogs.status.cpp                                      # 
+   |   |-- module.pywin.dialogs.status.const                                    # 
+   |   |-- module.pywin.dialogs.obj                                             # 
+   |   |-- module.pywin.dialogs.list.obj                                        # 
+   |   |-- module.pywin.dialogs.list.cpp                                        # 
+   |   |-- module.pywin.dialogs.list.const                                      # 
+   |   |-- module.pywin.dialogs.cpp                                             # 
+   |   |-- module.pywin.dialogs.const                                           # 
+   |   |-- module.pywin.cpp                                                     # 
+   |   |-- module.pywin.const                                                   # 
+   |   |-- module.pythoncom.obj                                                 # 
+   |   |-- module.pythoncom.cpp                                                 # 
+   |   |-- module.pythoncom.const                                               # 
+   |   |-- module.pypdf._xobj_image_helpers.obj                                 # 
+   |   |-- module.pypdf._xobj_image_helpers.cpp                                 # 
+   |   |-- module.pypdf._xobj_image_helpers.const                               # 
+   |   |-- module.pypdf._writer.obj                                             # 
+   |   |-- module.pypdf._writer.cpp                                             # 
+   |   |-- module.pypdf._writer.const                                           # 
+   |   |-- module.pypdf._version.obj                                            # 
+   |   |-- module.pypdf._version.cpp                                            # 
+   |   |-- module.pypdf._version.const                                          # 
+   |   |-- module.pypdf._utils.obj                                              # 
+   |   |-- module.pypdf._utils.cpp                                              # 
+   |   |-- module.pypdf._utils.const                                            # 
+   |   |-- module.pypdf._text_extraction._layout_mode._text_state_params.obj    # 
+   |   |-- module.pypdf._text_extraction._layout_mode._text_state_params.cpp    # 
+   |   |-- module.pypdf._text_extraction._layout_mode._text_state_params.const  # 
+   |   |-- module.pypdf._text_extraction._layout_mode._text_state_manager.obj   # 
+   |   |-- module.pypdf._text_extraction._layout_mode._text_state_manager.cpp   # 
+   |   |-- module.pypdf._text_extraction._layout_mode._text_state_manager.const # 
+   |   |-- module.pypdf._text_extraction._layout_mode._font_widths.obj          # 
+   |   |-- module.pypdf._text_extraction._layout_mode._font_widths.cpp          # 
+   |   |-- module.pypdf._text_extraction._layout_mode._font_widths.const        # 
+   |   |-- module.pypdf._text_extraction._layout_mode._font.obj                 # 
+   |   |-- module.pypdf._text_extraction._layout_mode._font.cpp                 # 
+   |   |-- module.pypdf._text_extraction._layout_mode._font.const               # 
+   |   |-- module.pypdf._text_extraction._layout_mode._fixed_width_page.obj     # 
+   |   |-- module.pypdf._text_extraction._layout_mode._fixed_width_page.cpp     # 
+   |   |-- module.pypdf._text_extraction._layout_mode._fixed_width_page.const   # 
+   |   |-- module.pypdf._text_extraction._layout_mode.obj                       # 
+   |   |-- module.pypdf._text_extraction._layout_mode.cpp                       # 
+   |   |-- module.pypdf._text_extraction._layout_mode.const                     # 
+   |   |-- module.pypdf._text_extraction.obj                                    # 
+   |   |-- module.pypdf._text_extraction.cpp                                    # 
+   |   |-- module.pypdf._text_extraction.const                                  # 
+   |   |-- module.pypdf._reader.obj                                             # 
+   |   |-- module.pypdf._reader.cpp                                             # 
+   |   |-- module.pypdf._reader.const                                           # 
+   |   |-- module.pypdf._protocols.obj                                          # 
+   |   |-- module.pypdf._protocols.cpp                                          # 
+   |   |-- module.pypdf._protocols.const                                        # 
+   |   |-- module.pypdf._page_labels.obj                                        # 
+   |   |-- module.pypdf._page_labels.cpp                                        # 
+   |   |-- module.pypdf._page_labels.const                                      # 
+   |   |-- module.pypdf._page.obj                                               # 
+   |   |-- module.pypdf._page.cpp                                               # 
+   |   |-- module.pypdf._page.const                                             # 
+   |   |-- module.pypdf._merger.obj                                             # 
+   |   |-- module.pypdf._merger.cpp                                             # 
+   |   |-- module.pypdf._merger.const                                           # 
+   |   |-- module.pypdf._encryption.obj                                         # 
+   |   |-- module.pypdf._encryption.cpp                                         # 
+   |   |-- module.pypdf._encryption.const                                       # 
+   |   |-- module.pypdf._doc_common.obj                                         # 
+   |   |-- module.pypdf._doc_common.cpp                                         # 
+   |   |-- module.pypdf._doc_common.const                                       # 
+   |   |-- module.pypdf._crypt_providers._pycryptodome.obj                      # 
+   |   |-- module.pypdf._crypt_providers._pycryptodome.cpp                      # 
+   |   |-- module.pypdf._crypt_providers._pycryptodome.const                    # 
+   |   |-- module.pypdf._crypt_providers._fallback.obj                          # 
+   |   |-- module.pypdf._crypt_providers._fallback.cpp                          # 
+   |   |-- module.pypdf._crypt_providers._fallback.const                        # 
+   |   |-- module.pypdf._crypt_providers._cryptography.obj                      # 
+   |   |-- module.pypdf._crypt_providers._cryptography.cpp                      # 
+   |   |-- module.pypdf._crypt_providers._cryptography.const                    # 
+   |   |-- module.pypdf._crypt_providers._base.obj                              # 
+   |   |-- module.pypdf._crypt_providers._base.cpp                              # 
+   |   |-- module.pypdf._crypt_providers._base.const                            # 
+   |   |-- module.pypdf._crypt_providers.obj                                    # 
+   |   |-- module.pypdf._crypt_providers.cpp                                    # 
+   |   |-- module.pypdf._crypt_providers.const                                  # 
+   |   |-- module.pypdf._codecs.zapfding.obj                                    # 
+   |   |-- module.pypdf._codecs.zapfding.cpp                                    # 
+   |   |-- module.pypdf._codecs.zapfding.const                                  # 
+   |   |-- module.pypdf._codecs.symbol.obj                                      # 
+   |   |-- module.pypdf._codecs.symbol.cpp                                      # 
+   |   |-- module.pypdf._codecs.symbol.const                                    # 
+   |   |-- module.pypdf._codecs.std.obj                                         # 
+   |   |-- module.pypdf._codecs.std.cpp                                         # 
+   |   |-- module.pypdf._codecs.std.const                                       # 
+   |   |-- module.pypdf._codecs.pdfdoc.obj                                      # 
+   |   |-- module.pypdf._codecs.pdfdoc.cpp                                      # 
+   |   |-- module.pypdf._codecs.pdfdoc.const                                    # 
+   |   |-- module.pypdf._codecs.obj                                             # 
+   |   |-- module.pypdf._codecs.cpp                                             # 
+   |   |-- module.pypdf._codecs.const                                           # 
+   |   |-- module.pypdf._codecs.adobe_glyphs.obj                                # 
+   |   |-- module.pypdf._codecs.adobe_glyphs.cpp                                # 
+   |   |-- module.pypdf._codecs.adobe_glyphs.const                              # 
+   |   |-- module.pypdf._cmap.obj                                               # 
+   |   |-- module.pypdf._cmap.cpp                                               # 
+   |   |-- module.pypdf._cmap.const                                             # 
+   |   |-- module.pypdf.xmp.obj                                                 # 
+   |   |-- module.pypdf.xmp.cpp                                                 # 
+   |   |-- module.pypdf.xmp.const                                               # 
+   |   |-- module.pypdf.types.obj                                               # 
+   |   |-- module.pypdf.types.cpp                                               # 
+   |   |-- module.pypdf.types.const                                             # 
+   |   |-- module.pypdf.papersizes.obj                                          # 
+   |   |-- module.pypdf.papersizes.cpp                                          # 
+   |   |-- module.pypdf.papersizes.const                                        # 
+   |   |-- module.pypdf.pagerange.obj                                           # 
+   |   |-- module.pypdf.pagerange.cpp                                           # 
+   |   |-- module.pypdf.pagerange.const                                         # 
+   |   |-- module.pypdf.obj                                                     # 
+   |   |-- module.pypdf.generic._viewerpref.obj                                 # 
+   |   |-- module.pypdf.generic._viewerpref.cpp                                 # 
+   |   |-- module.pypdf.generic._viewerpref.const                               # 
+   |   |-- module.pypdf.generic._utils.obj                                      # 
+   |   |-- module.pypdf.generic._utils.cpp                                      # 
+   |   |-- module.pypdf.generic._utils.const                                    # 
+   |   |-- module.pypdf.generic._rectangle.obj                                  # 
+   |   |-- module.pypdf.generic._rectangle.cpp                                  # 
+   |   |-- module.pypdf.generic._rectangle.const                                # 
+   |   |-- module.pypdf.generic._outline.obj                                    # 
+   |   |-- module.pypdf.generic._outline.cpp                                    # 
+   |   |-- module.pypdf.generic._outline.const                                  # 
+   |   |-- module.pypdf.generic._image_inline.obj                               # 
+   |   |-- module.pypdf.generic._image_inline.cpp                               # 
+   |   |-- module.pypdf.generic._image_inline.const                             # 
+   |   |-- module.pypdf.generic._fit.obj                                        # 
+   |   |-- module.pypdf.generic._fit.cpp                                        # 
+   |   |-- module.pypdf.generic._fit.const                                      # 
+   |   |-- module.pypdf.generic._data_structures.obj                            # 
+   |   |-- module.pypdf.generic._data_structures.cpp                            # 
+   |   |-- module.pypdf.generic._data_structures.const                          # 
+   |   |-- module.pypdf.generic._base.obj                                       # 
+   |   |-- module.pypdf.generic._base.cpp                                       # 
+   |   |-- module.pypdf.generic._base.const                                     # 
+   |   |-- module.pypdf.generic.obj                                             # 
+   |   |-- module.pypdf.generic.cpp                                             # 
+   |   |-- module.pypdf.generic.const                                           # 
+   |   |-- module.pypdf.filters.obj                                             # 
+   |   |-- module.pypdf.filters.cpp                                             # 
+   |   |-- module.pypdf.filters.const                                           # 
+   |   |-- module.pypdf.errors.obj                                              # 
+   |   |-- module.pypdf.errors.cpp                                              # 
+   |   |-- module.pypdf.errors.const                                            # 
+   |   |-- module.pypdf.cpp                                                     # 
+   |   |-- module.pypdf.constants.obj                                           # 
+   |   |-- module.pypdf.constants.cpp                                           # 
+   |   |-- module.pypdf.constants.const                                         # 
+   |   |-- module.pypdf.const                                                   # 
+   |   |-- module.pypdf.annotations._non_markup_annotations.obj                 # 
+   |   |-- module.pypdf.annotations._non_markup_annotations.cpp                 # 
+   |   |-- module.pypdf.annotations._non_markup_annotations.const               # 
+   |   |-- module.pypdf.annotations._markup_annotations.obj                     # 
+   |   |-- module.pypdf.annotations._markup_annotations.cpp                     # 
+   |   |-- module.pypdf.annotations._markup_annotations.const                   # 
+   |   |-- module.pypdf.annotations._base.obj                                   # 
+   |   |-- module.pypdf.annotations._base.cpp                                   # 
+   |   |-- module.pypdf.annotations._base.const                                 # 
+   |   |-- module.pypdf.annotations.obj                                         # 
+   |   |-- module.pypdf.annotations.cpp                                         # 
+   |   |-- module.pypdf.annotations.const                                       # 
+   |   |-- module.pydantic_core.obj                                             # 
+   |   |-- module.pydantic_core.cpp                                             # 
+   |   |-- module.pydantic_core.core_schema.obj                                 # 
+   |   |-- module.pydantic_core.core_schema.cpp                                 # 
+   |   |-- module.pydantic_core.core_schema.const                               # 
+   |   |-- module.pydantic_core.const                                           # 
+   |   |-- module.pydantic._migration.obj                                       # 
+   |   |-- module.pydantic._migration.cpp                                       # 
+   |   |-- module.pydantic._migration.const                                     # 
+   |   |-- module.pydantic._internal._validators.obj                            # 
+   |   |-- module.pydantic._internal._validators.cpp                            # 
+   |   |-- module.pydantic._internal._validators.const                          # 
+   |   |-- module.pydantic._internal._validate_call.obj                         # 
+   |   |-- module.pydantic._internal._validate_call.cpp                         # 
+   |   |-- module.pydantic._internal._validate_call.const                       # 
+   |   |-- module.pydantic._internal._utils.obj                                 # 
+   |   |-- module.pydantic._internal._utils.cpp                                 # 
+   |   |-- module.pydantic._internal._utils.const                               # 
+   |   |-- module.pydantic._internal._typing_extra.obj                          # 
+   |   |-- module.pydantic._internal._typing_extra.cpp                          # 
+   |   |-- module.pydantic._internal._typing_extra.const                        # 
+   |   |-- module.pydantic._internal._std_types_schema.obj                      # 
+   |   |-- module.pydantic._internal._std_types_schema.cpp                      # 
+   |   |-- module.pydantic._internal._std_types_schema.const                    # 
+   |   |-- module.pydantic._internal._signature.obj                             # 
+   |   |-- module.pydantic._internal._signature.cpp                             # 
+   |   |-- module.pydantic._internal._signature.const                           # 
+   |   |-- module.pydantic._internal._schema_generation_shared.obj              # 
+   |   |-- module.pydantic._internal._schema_generation_shared.cpp              # 
+   |   |-- module.pydantic._internal._schema_generation_shared.const            # 
+   |   |-- module.pydantic._internal._repr.obj                                  # 
+   |   |-- module.pydantic._internal._repr.cpp                                  # 
+   |   |-- module.pydantic._internal._repr.const                                # 
+   |   |-- module.pydantic._internal._model_construction.obj                    # 
+   |   |-- module.pydantic._internal._model_construction.cpp                    # 
+   |   |-- module.pydantic._internal._model_construction.const                  # 
+   |   |-- module.pydantic._internal._mock_val_ser.obj                          # 
+   |   |-- module.pydantic._internal._mock_val_ser.cpp                          # 
+   |   |-- module.pydantic._internal._mock_val_ser.const                        # 
+   |   |-- module.pydantic._internal._known_annotated_metadata.obj              # 
+   |   |-- module.pydantic._internal._known_annotated_metadata.cpp              # 
+   |   |-- module.pydantic._internal._known_annotated_metadata.const            # 
+   |   |-- module.pydantic._internal._internal_dataclass.obj                    # 
+   |   |-- module.pydantic._internal._internal_dataclass.cpp                    # 
+   |   |-- module.pydantic._internal._internal_dataclass.const                  # 
+   |   |-- module.pydantic._internal._git.obj                                   # 
+   |   |-- module.pydantic._internal._git.cpp                                   # 
+   |   |-- module.pydantic._internal._git.const                                 # 
+   |   |-- module.pydantic._internal._generics.obj                              # 
+   |   |-- module.pydantic._internal._generics.cpp                              # 
+   |   |-- module.pydantic._internal._generics.const                            # 
+   |   |-- module.pydantic._internal._generate_schema.obj                       # 
+   |   |-- module.pydantic._internal._generate_schema.cpp                       # 
+   |   |-- module.pydantic._internal._generate_schema.const                     # 
+   |   |-- module.pydantic._internal._forward_ref.obj                           # 
+   |   |-- module.pydantic._internal._forward_ref.cpp                           # 
+   |   |-- module.pydantic._internal._forward_ref.const                         # 
+   |   |-- module.pydantic._internal._fields.obj                                # 
+   |   |-- module.pydantic._internal._fields.cpp                                # 
+   |   |-- module.pydantic._internal._fields.const                              # 
+   |   |-- module.pydantic._internal._docs_extraction.obj                       # 
+   |   |-- module.pydantic._internal._docs_extraction.cpp                       # 
+   |   |-- module.pydantic._internal._docs_extraction.const                     # 
+   |   |-- module.pydantic._internal._discriminated_union.obj                   # 
+   |   |-- module.pydantic._internal._discriminated_union.cpp                   # 
+   |   |-- module.pydantic._internal._discriminated_union.const                 # 
+   |   |-- module.pydantic._internal._decorators.obj                            # 
+   |   |-- module.pydantic._internal._decorators.cpp                            # 
+   |   |-- module.pydantic._internal._decorators.const                          # 
+   |   |-- module.pydantic._internal._dataclasses.obj                           # 
+   |   |-- module.pydantic._internal._dataclasses.cpp                           # 
+   |   |-- module.pydantic._internal._dataclasses.const                         # 
+   |   |-- module.pydantic._internal._core_utils.obj                            # 
+   |   |-- module.pydantic._internal._core_utils.cpp                            # 
+   |   |-- module.pydantic._internal._core_utils.const                          # 
+   |   |-- module.pydantic._internal._core_metadata.obj                         # 
+   |   |-- module.pydantic._internal._core_metadata.cpp                         # 
+   |   |-- module.pydantic._internal._core_metadata.const                       # 
+   |   |-- module.pydantic._internal._config.obj                                # 
+   |   |-- module.pydantic._internal._config.cpp                                # 
+   |   |-- module.pydantic._internal._config.const                              # 
+   |   |-- module.pydantic._internal.obj                                        # 
+   |   |-- module.pydantic._internal.cpp                                        # 
+   |   |-- module.pydantic._internal.const                                      # 
+   |   |-- module.pydantic.warnings.obj                                         # 
+   |   |-- module.pydantic.warnings.cpp                                         # 
+   |   |-- module.pydantic.warnings.const                                       # 
+   |   |-- module.pydantic.version.obj                                          # 
+   |   |-- module.pydantic.version.cpp                                          # 
+   |   |-- module.pydantic.version.const                                        # 
+   |   |-- module.pydantic.validators.obj                                       # 
+   |   |-- module.pydantic.validators.cpp                                       # 
+   |   |-- module.pydantic.validators.const                                     # 
+   |   |-- module.pydantic.utils.obj                                            # 
+   |   |-- module.pydantic.utils.cpp                                            # 
+   |   |-- module.pydantic.utils.const                                          # 
+   |   |-- module.pydantic.typing.obj                                           # 
+   |   |-- module.pydantic.typing.cpp                                           # 
+   |   |-- module.pydantic.typing.const                                         # 
+   |   |-- module.pydantic.type_adapter.obj                                     # 
+   |   |-- module.pydantic.type_adapter.cpp                                     # 
+   |   |-- module.pydantic.type_adapter.const                                   # 
+   |   |-- module.pydantic.types.obj                                            # 
+   |   |-- module.pydantic.types.cpp                                            # 
+   |   |-- module.pydantic.types.const                                          # 
+   |   |-- module.pydantic.schema.obj                                           # 
+   |   |-- module.pydantic.schema.cpp                                           # 
+   |   |-- module.pydantic.schema.const                                         # 
+   |   |-- module.pydantic.root_model.obj                                       # 
+   |   |-- module.pydantic.root_model.cpp                                       # 
+   |   |-- module.pydantic.root_model.const                                     # 
+   |   |-- module.pydantic.plugin._schema_validator.obj                         # 
+   |   |-- module.pydantic.plugin._schema_validator.cpp                         # 
+   |   |-- module.pydantic.plugin._schema_validator.const                       # 
+   |   |-- module.pydantic.plugin._loader.obj                                   # 
+   |   |-- module.pydantic.plugin._loader.cpp                                   # 
+   |   |-- module.pydantic.plugin._loader.const                                 # 
+   |   |-- module.pydantic.plugin.obj                                           # 
+   |   |-- module.pydantic.plugin.cpp                                           # 
+   |   |-- module.pydantic.plugin.const                                         # 
+   |   |-- module.pydantic.parse.obj                                            # 
+   |   |-- module.pydantic.parse.cpp                                            # 
+   |   |-- module.pydantic.parse.const                                          # 
+   |   |-- module.pydantic.obj                                                  # 
+   |   |-- module.pydantic.networks.obj                                         # 
+   |   |-- module.pydantic.networks.cpp                                         # 
+   |   |-- module.pydantic.networks.const                                       # 
+   |   |-- module.pydantic.mypy.obj                                             # 
+   |   |-- module.pydantic.mypy.cpp                                             # 
+   |   |-- module.pydantic.mypy.const                                           # 
+   |   |-- module.pydantic.main.obj                                             # 
+   |   |-- module.pydantic.main.cpp                                             # 
+   |   |-- module.pydantic.main.const                                           # 
+   |   |-- module.pydantic.json_schema.obj                                      # 
+   |   |-- module.pydantic.json_schema.cpp                                      # 
+   |   |-- module.pydantic.json_schema.const                                    # 
+   |   |-- module.pydantic.json.obj                                             # 
+   |   |-- module.pydantic.json.cpp                                             # 
+   |   |-- module.pydantic.json.const                                           # 
+   |   |-- module.pydantic.fields.obj                                           # 
+   |   |-- module.pydantic.fields.cpp                                           # 
+   |   |-- module.pydantic.fields.const                                         # 
+   |   |-- module.pydantic.error_wrappers.obj                                   # 
+   |   |-- module.pydantic.error_wrappers.cpp                                   # 
+   |   |-- module.pydantic.error_wrappers.const                                 # 
+   |   |-- module.pydantic.errors.obj                                           # 
+   |   |-- module.pydantic.errors.cpp                                           # 
+   |   |-- module.pydantic.errors.const                                         # 
+   |   |-- module.pydantic.env_settings.obj                                     # 
+   |   |-- module.pydantic.env_settings.cpp                                     # 
+   |   |-- module.pydantic.env_settings.const                                   # 
+   |   |-- module.pydantic.deprecated.parse.obj                                 # 
+   |   |-- module.pydantic.deprecated.parse.cpp                                 # 
+   |   |-- module.pydantic.deprecated.parse.const                               # 
+   |   |-- module.pydantic.deprecated.obj                                       # 
+   |   |-- module.pydantic.deprecated.json.obj                                  # 
+   |   |-- module.pydantic.deprecated.json.cpp                                  # 
+   |   |-- module.pydantic.deprecated.json.const                                # 
+   |   |-- module.pydantic.deprecated.cpp                                       # 
+   |   |-- module.pydantic.deprecated.copy_internals.obj                        # 
+   |   |-- module.pydantic.deprecated.copy_internals.cpp                        # 
+   |   |-- module.pydantic.deprecated.copy_internals.const                      # 
+   |   |-- module.pydantic.deprecated.const                                     # 
+   |   |-- module.pydantic.datetime_parse.obj                                   # 
+   |   |-- module.pydantic.datetime_parse.cpp                                   # 
+   |   |-- module.pydantic.datetime_parse.const                                 # 
+   |   |-- module.pydantic.dataclasses.obj                                      # 
+   |   |-- module.pydantic.dataclasses.cpp                                      # 
+   |   |-- module.pydantic.dataclasses.const                                    # 
+   |   |-- module.pydantic.cpp                                                  # 
+   |   |-- module.pydantic.const                                                # 
+   |   |-- module.pydantic.config.obj                                           # 
+   |   |-- module.pydantic.config.cpp                                           # 
+   |   |-- module.pydantic.config.const                                         # 
+   |   |-- module.pydantic.color.obj                                            # 
+   |   |-- module.pydantic.color.cpp                                            # 
+   |   |-- module.pydantic.color.const                                          # 
+   |   |-- module.pydantic.class_validators.obj                                 # 
+   |   |-- module.pydantic.class_validators.cpp                                 # 
+   |   |-- module.pydantic.class_validators.const                               # 
+   |   |-- module.pydantic.annotated_handlers.obj                               # 
+   |   |-- module.pydantic.annotated_handlers.cpp                               # 
+   |   |-- module.pydantic.annotated_handlers.const                             # 
+   |   |-- module.pydantic.aliases.obj                                          # 
+   |   |-- module.pydantic.aliases.cpp                                          # 
+   |   |-- module.pydantic.aliases.const                                        # 
+   |   |-- module.netbios.obj                                                   # 
+   |   |-- module.netbios.cpp                                                   # 
+   |   |-- module.netbios.const                                                 # 
+   |   |-- module.multiprocessing-preLoad.obj                                   # 
+   |   |-- module.multiprocessing-preLoad.cpp                                   # 
+   |   |-- module.multiprocessing-preLoad.const                                 # 
+   |   |-- module.multiprocessing-postLoad.obj                                  # 
+   |   |-- module.multiprocessing-postLoad.cpp                                  # 
+   |   |-- module.multiprocessing-postLoad.const                                # 
+   |   |-- module.commctrl.obj                                                  # 
+   |   |-- module.commctrl.cpp                                                  # 
+   |   |-- module.commctrl.const                                                # 
+   |   |-- module.annotated_types.obj                                           # 
+   |   |-- module.annotated_types.cpp                                           # 
+   |   |-- module.annotated_types.const                                         # 
+   |   |-- clcache-stats.8260.txt                                               # 
+   |   |-- build_definitions.h                                                  # 
+   |   |-- .sconsign-38.dblite                                                  # 
+   |   `-- .gitignore                                                           # 
+   |-- main.dist/                                                               # 
+   |   |-- pydantic_core/                                                       # 「pydantic_core」
+   |   |   `-- _pydantic_core.pyd                                               # 
+   |   |-- tcl/                                                                 # 「tcl」
+   |   |   |-- encoding/                                                        # 「encoding」
+   |   |   |   |-- tis-620.enc                                                  # 
+   |   |   |   |-- symbol.enc                                                   # 
+   |   |   |   |-- shiftjis.enc                                                 # 
+   |   |   |   |-- macUkraine.enc                                               # 
+   |   |   |   |-- macTurkish.enc                                               # 
+   |   |   |   |-- macThai.enc                                                  # 
+   |   |   |   |-- macRomania.enc                                               # 
+   |   |   |   |-- macRoman.enc                                                 # 
+   |   |   |   |-- macJapan.enc                                                 # 
+   |   |   |   |-- macIceland.enc                                               # 
+   |   |   |   |-- macGreek.enc                                                 # 
+   |   |   |   |-- macDingbats.enc                                              # 
+   |   |   |   |-- macCyrillic.enc                                              # 
+   |   |   |   |-- macCroatian.enc                                              # 
+   |   |   |   |-- macCentEuro.enc                                              # 
+   |   |   |   |-- ksc5601.enc                                                  # 
+   |   |   |   |-- koi8-u.enc                                                   # 
+   |   |   |   |-- koi8-r.enc                                                   # 
+   |   |   |   |-- jis0212.enc                                                  # 
+   |   |   |   |-- jis0208.enc                                                  # 
+   |   |   |   |-- jis0201.enc                                                  # 
+   |   |   |   |-- iso8859-9.enc                                                # 
+   |   |   |   |-- iso8859-8.enc                                                # 
+   |   |   |   |-- iso8859-7.enc                                                # 
+   |   |   |   |-- iso8859-6.enc                                                # 
+   |   |   |   |-- iso8859-5.enc                                                # 
+   |   |   |   |-- iso8859-4.enc                                                # 
+   |   |   |   |-- iso8859-3.enc                                                # 
+   |   |   |   |-- iso8859-2.enc                                                # 
+   |   |   |   |-- iso8859-16.enc                                               # 
+   |   |   |   |-- iso8859-15.enc                                               # 
+   |   |   |   |-- iso8859-14.enc                                               # 
+   |   |   |   |-- iso8859-13.enc                                               # 
+   |   |   |   |-- iso8859-10.enc                                               # 
+   |   |   |   |-- iso8859-1.enc                                                # 
+   |   |   |   |-- iso2022.enc                                                  # 
+   |   |   |   |-- iso2022-kr.enc                                               # 
+   |   |   |   |-- iso2022-jp.enc                                               # 
+   |   |   |   |-- gb2312.enc                                                   # 
+   |   |   |   |-- gb2312-raw.enc                                               # 
+   |   |   |   |-- gb1988.enc                                                   # 
+   |   |   |   |-- gb12345.enc                                                  # 
+   |   |   |   |-- euc-kr.enc                                                   # 
+   |   |   |   |-- euc-jp.enc                                                   # 
+   |   |   |   |-- euc-cn.enc                                                   # 
+   |   |   |   |-- ebcdic.enc                                                   # 
+   |   |   |   |-- dingbats.enc                                                 # 
+   |   |   |   |-- cp950.enc                                                    # 
+   |   |   |   |-- cp949.enc                                                    # 
+   |   |   |   |-- cp936.enc                                                    # 
+   |   |   |   |-- cp932.enc                                                    # 
+   |   |   |   |-- cp874.enc                                                    # 
+   |   |   |   |-- cp869.enc                                                    # 
+   |   |   |   |-- cp866.enc                                                    # 
+   |   |   |   |-- cp865.enc                                                    # 
+   |   |   |   |-- cp864.enc                                                    # 
+   |   |   |   |-- cp863.enc                                                    # 
+   |   |   |   |-- cp862.enc                                                    # 
+   |   |   |   |-- cp861.enc                                                    # 
+   |   |   |   |-- cp860.enc                                                    # 
+   |   |   |   |-- cp857.enc                                                    # 
+   |   |   |   |-- cp855.enc                                                    # 
+   |   |   |   |-- cp852.enc                                                    # 
+   |   |   |   |-- cp850.enc                                                    # 
+   |   |   |   |-- cp775.enc                                                    # 
+   |   |   |   |-- cp737.enc                                                    # 
+   |   |   |   |-- cp437.enc                                                    # 
+   |   |   |   |-- cp1258.enc                                                   # 
+   |   |   |   |-- cp1257.enc                                                   # 
+   |   |   |   |-- cp1256.enc                                                   # 
+   |   |   |   |-- cp1255.enc                                                   # 
+   |   |   |   |-- cp1254.enc                                                   # 
+   |   |   |   |-- cp1253.enc                                                   # 
+   |   |   |   |-- cp1252.enc                                                   # 
+   |   |   |   |-- cp1251.enc                                                   # 
+   |   |   |   |-- cp1250.enc                                                   # 
+   |   |   |   |-- big5.enc                                                     # 
+   |   |   |   `-- ascii.enc                                                    # 
+   |   |   |-- http1.0/                                                         # 
+   |   |   |   |-- pkgIndex.tcl                                                 # 
+   |   |   |   `-- http.tcl                                                     # 
+   |   |   |-- msgs/                                                            # 「msgs」
+   |   |   |   |-- zh_tw.msg                                                    # 
+   |   |   |   |-- zh_sg.msg                                                    # 
+   |   |   |   |-- zh_hk.msg                                                    # 
+   |   |   |   |-- zh_cn.msg                                                    # 
+   |   |   |   |-- zh.msg                                                       # 
+   |   |   |   |-- vi.msg                                                       # 
+   |   |   |   |-- uk.msg                                                       # 
+   |   |   |   |-- tr.msg                                                       # 
+   |   |   |   |-- th.msg                                                       # 
+   |   |   |   |-- te_in.msg                                                    # 
+   |   |   |   |-- te.msg                                                       # 
+   |   |   |   |-- ta_in.msg                                                    # 
+   |   |   |   |-- ta.msg                                                       # 
+   |   |   |   |-- sw.msg                                                       # 
+   |   |   |   |-- sv.msg                                                       # 
+   |   |   |   |-- sr.msg                                                       # 
+   |   |   |   |-- sq.msg                                                       # 
+   |   |   |   |-- sl.msg                                                       # 
+   |   |   |   |-- sk.msg                                                       # 
+   |   |   |   |-- sh.msg                                                       # 
+   |   |   |   |-- ru_ua.msg                                                    # 
+   |   |   |   |-- ru.msg                                                       # 
+   |   |   |   |-- ro.msg                                                       # 
+   |   |   |   |-- pt_br.msg                                                    # 
+   |   |   |   |-- pt.msg                                                       # 
+   |   |   |   |-- pl.msg                                                       # 
+   |   |   |   |-- nn.msg                                                       # 
+   |   |   |   |-- nl_be.msg                                                    # 
+   |   |   |   |-- nl.msg                                                       # 
+   |   |   |   |-- nb.msg                                                       # 
+   |   |   |   |-- mt.msg                                                       # 
+   |   |   |   |-- ms_my.msg                                                    # 
+   |   |   |   |-- ms.msg                                                       # 
+   |   |   |   |-- mr_in.msg                                                    # 
+   |   |   |   |-- mr.msg                                                       # 
+   |   |   |   |-- mk.msg                                                       # 
+   |   |   |   |-- lv.msg                                                       # 
+   |   |   |   |-- lt.msg                                                       # 
+   |   |   |   |-- kw_gb.msg                                                    # 
+   |   |   |   |-- kw.msg                                                       # 
+   |   |   |   |-- ko_kr.msg                                                    # 
+   |   |   |   |-- kok_in.msg                                                   # 
+   |   |   |   |-- kok.msg                                                      # 
+   |   |   |   |-- ko.msg                                                       # 
+   |   |   |   |-- kl_gl.msg                                                    # 
+   |   |   |   |-- kl.msg                                                       # 
+   |   |   |   |-- ja.msg                                                       # 
+   |   |   |   |-- it_ch.msg                                                    # 
+   |   |   |   |-- it.msg                                                       # 
+   |   |   |   |-- is.msg                                                       # 
+   |   |   |   |-- id_id.msg                                                    # 
+   |   |   |   |-- id.msg                                                       # 
+   |   |   |   |-- hu.msg                                                       # 
+   |   |   |   |-- hr.msg                                                       # 
+   |   |   |   |-- hi_in.msg                                                    # 
+   |   |   |   |-- hi.msg                                                       # 
+   |   |   |   |-- he.msg                                                       # 
+   |   |   |   |-- gv_gb.msg                                                    # 
+   |   |   |   |-- gv.msg                                                       # 
+   |   |   |   |-- gl_es.msg                                                    # 
+   |   |   |   |-- gl.msg                                                       # 
+   |   |   |   |-- ga_ie.msg                                                    # 
+   |   |   |   |-- ga.msg                                                       # 
+   |   |   |   |-- fr_ch.msg                                                    # 
+   |   |   |   |-- fr_ca.msg                                                    # 
+   |   |   |   |-- fr_be.msg                                                    # 
+   |   |   |   |-- fr.msg                                                       # 
+   |   |   |   |-- fo_fo.msg                                                    # 
+   |   |   |   |-- fo.msg                                                       # 
+   |   |   |   |-- fi.msg                                                       # 
+   |   |   |   |-- fa_ir.msg                                                    # 
+   |   |   |   |-- fa_in.msg                                                    # 
+   |   |   |   |-- fa.msg                                                       # 
+   |   |   |   |-- eu_es.msg                                                    # 
+   |   |   |   |-- eu.msg                                                       # 
+   |   |   |   |-- et.msg                                                       # 
+   |   |   |   |-- es_ve.msg                                                    # 
+   |   |   |   |-- es_uy.msg                                                    # 
+   |   |   |   |-- es_sv.msg                                                    # 
+   |   |   |   |-- es_py.msg                                                    # 
+   |   |   |   |-- es_pr.msg                                                    # 
+   |   |   |   |-- es_pe.msg                                                    # 
+   |   |   |   |-- es_pa.msg                                                    # 
+   |   |   |   |-- es_ni.msg                                                    # 
+   |   |   |   |-- es_mx.msg                                                    # 
+   |   |   |   |-- es_hn.msg                                                    # 
+   |   |   |   |-- es_gt.msg                                                    # 
+   |   |   |   |-- es_ec.msg                                                    # 
+   |   |   |   |-- es_do.msg                                                    # 
+   |   |   |   |-- es_cr.msg                                                    # 
+   |   |   |   |-- es_co.msg                                                    # 
+   |   |   |   |-- es_cl.msg                                                    # 
+   |   |   |   |-- es_bo.msg                                                    # 
+   |   |   |   |-- es_ar.msg                                                    # 
+   |   |   |   |-- es.msg                                                       # 
+   |   |   |   |-- eo.msg                                                       # 
+   |   |   |   |-- en_zw.msg                                                    # 
+   |   |   |   |-- en_za.msg                                                    # 
+   |   |   |   |-- en_sg.msg                                                    # 
+   |   |   |   |-- en_ph.msg                                                    # 
+   |   |   |   |-- en_nz.msg                                                    # 
+   |   |   |   |-- en_in.msg                                                    # 
+   |   |   |   |-- en_ie.msg                                                    # 
+   |   |   |   |-- en_hk.msg                                                    # 
+   |   |   |   |-- en_gb.msg                                                    # 
+   |   |   |   |-- en_ca.msg                                                    # 
+   |   |   |   |-- en_bw.msg                                                    # 
+   |   |   |   |-- en_be.msg                                                    # 
+   |   |   |   |-- en_au.msg                                                    # 
+   |   |   |   |-- el.msg                                                       # 
+   |   |   |   |-- de_be.msg                                                    # 
+   |   |   |   |-- de_at.msg                                                    # 
+   |   |   |   |-- de.msg                                                       # 
+   |   |   |   |-- da.msg                                                       # 
+   |   |   |   |-- cs.msg                                                       # 
+   |   |   |   |-- ca.msg                                                       # 
+   |   |   |   |-- bn_in.msg                                                    # 
+   |   |   |   |-- bn.msg                                                       # 
+   |   |   |   |-- bg.msg                                                       # 
+   |   |   |   |-- be.msg                                                       # 
+   |   |   |   |-- ar_sy.msg                                                    # 
+   |   |   |   |-- ar_lb.msg                                                    # 
+   |   |   |   |-- ar_jo.msg                                                    # 
+   |   |   |   |-- ar_in.msg                                                    # 
+   |   |   |   |-- ar.msg                                                       # 
+   |   |   |   |-- af_za.msg                                                    # 
+   |   |   |   `-- af.msg                                                       # 
+   |   |   |-- opt0.4/                                                          # 
+   |   |   |   |-- pkgIndex.tcl                                                 # 
+   |   |   |   `-- optparse.tcl                                                 # 
+   |   |   |-- tzdata/                                                          # 「tzdata」
+   |   |   |   |-- Africa/                                                      # 「Africa」
+   |   |   |   |   |-- Windhoek                                                 # 
+   |   |   |   |   |-- Tunis                                                    # 
+   |   |   |   |   |-- Tripoli                                                  # 
+   |   |   |   |   |-- Timbuktu                                                 # 
+   |   |   |   |   |-- Sao_Tome                                                 # 
+   |   |   |   |   |-- Porto-Novo                                               # 
+   |   |   |   |   |-- Ouagadougou                                              # 
+   |   |   |   |   |-- Nouakchott                                               # 
+   |   |   |   |   |-- Niamey                                                   # 
+   |   |   |   |   |-- Ndjamena                                                 # 
+   |   |   |   |   |-- Nairobi                                                  # 
+   |   |   |   |   |-- Monrovia                                                 # 
+   |   |   |   |   |-- Mogadishu                                                # 
+   |   |   |   |   |-- Mbabane                                                  # 
+   |   |   |   |   |-- Maseru                                                   # 
+   |   |   |   |   |-- Maputo                                                   # 
+   |   |   |   |   |-- Malabo                                                   # 
+   |   |   |   |   |-- Lusaka                                                   # 
+   |   |   |   |   |-- Lubumbashi                                               # 
+   |   |   |   |   |-- Luanda                                                   # 
+   |   |   |   |   |-- Lome                                                     # 
+   |   |   |   |   |-- Libreville                                               # 
+   |   |   |   |   |-- Lagos                                                    # 
+   |   |   |   |   |-- Kinshasa                                                 # 
+   |   |   |   |   |-- Kigali                                                   # 
+   |   |   |   |   |-- Khartoum                                                 # 
+   |   |   |   |   |-- Kampala                                                  # 
+   |   |   |   |   |-- Juba                                                     # 
+   |   |   |   |   |-- Johannesburg                                             # 
+   |   |   |   |   |-- Harare                                                   # 
+   |   |   |   |   |-- Gaborone                                                 # 
+   |   |   |   |   |-- Freetown                                                 # 
+   |   |   |   |   |-- El_Aaiun                                                 # 
+   |   |   |   |   |-- Douala                                                   # 
+   |   |   |   |   |-- Djibouti                                                 # 
+   |   |   |   |   |-- Dar_es_Salaam                                            # 
+   |   |   |   |   |-- Dakar                                                    # 
+   |   |   |   |   |-- Conakry                                                  # 
+   |   |   |   |   |-- Ceuta                                                    # 
+   |   |   |   |   |-- Casablanca                                               # 
+   |   |   |   |   |-- Cairo                                                    # 
+   |   |   |   |   |-- Bujumbura                                                # 
+   |   |   |   |   |-- Brazzaville                                              # 
+   |   |   |   |   |-- Blantyre                                                 # 
+   |   |   |   |   |-- Bissau                                                   # 
+   |   |   |   |   |-- Banjul                                                   # 
+   |   |   |   |   |-- Bangui                                                   # 
+   |   |   |   |   |-- Bamako                                                   # 
+   |   |   |   |   |-- Asmera                                                   # 
+   |   |   |   |   |-- Asmara                                                   # 
+   |   |   |   |   |-- Algiers                                                  # 
+   |   |   |   |   |-- Addis_Ababa                                              # 
+   |   |   |   |   |-- Accra                                                    # 
+   |   |   |   |   `-- Abidjan                                                  # 
+   |   |   |   |-- America/                                                     # 「America」
+   |   |   |   |   |-- Argentina/                                               # 「Argentina」
+   |   |   |   |   |   |-- Ushuaia                                              # 
+   |   |   |   |   |   |-- Tucuman                                              # 
+   |   |   |   |   |   |-- San_Luis                                             # 
+   |   |   |   |   |   |-- San_Juan                                             # 
+   |   |   |   |   |   |-- Salta                                                # 
+   |   |   |   |   |   |-- Rio_Gallegos                                         # 
+   |   |   |   |   |   |-- Mendoza                                              # 
+   |   |   |   |   |   |-- La_Rioja                                             # 
+   |   |   |   |   |   |-- Jujuy                                                # 
+   |   |   |   |   |   |-- Cordoba                                              # 
+   |   |   |   |   |   |-- ComodRivadavia                                       # 
+   |   |   |   |   |   |-- Catamarca                                            # 
+   |   |   |   |   |   `-- Buenos_Aires                                         # 
+   |   |   |   |   |-- Indiana/                                                 # 「Indiana」
+   |   |   |   |   |   |-- Winamac                                              # 
+   |   |   |   |   |   |-- Vincennes                                            # 
+   |   |   |   |   |   |-- Vevay                                                # 
+   |   |   |   |   |   |-- Tell_City                                            # 
+   |   |   |   |   |   |-- Petersburg                                           # 
+   |   |   |   |   |   |-- Marengo                                              # 
+   |   |   |   |   |   |-- Knox                                                 # 
+   |   |   |   |   |   `-- Indianapolis                                         # 
+   |   |   |   |   |-- Kentucky/                                                # 「Kentucky」
+   |   |   |   |   |   |-- Monticello                                           # 
+   |   |   |   |   |   `-- Louisville                                           # 
+   |   |   |   |   |-- North_Dakota/                                            # 「North_Dakota」
+   |   |   |   |   |   |-- New_Salem                                            # 
+   |   |   |   |   |   |-- Center                                               # 
+   |   |   |   |   |   `-- Beulah                                               # 
+   |   |   |   |   |-- Yellowknife                                              # 
+   |   |   |   |   |-- Yakutat                                                  # 
+   |   |   |   |   |-- Winnipeg                                                 # 
+   |   |   |   |   |-- Whitehorse                                               # 
+   |   |   |   |   |-- Virgin                                                   # 
+   |   |   |   |   |-- Vancouver                                                # 
+   |   |   |   |   |-- Tortola                                                  # 
+   |   |   |   |   |-- Toronto                                                  # 
+   |   |   |   |   |-- Tijuana                                                  # 
+   |   |   |   |   |-- Thunder_Bay                                              # 
+   |   |   |   |   |-- Thule                                                    # 
+   |   |   |   |   |-- Tegucigalpa                                              # 
+   |   |   |   |   |-- Swift_Current                                            # 
+   |   |   |   |   |-- St_Vincent                                               # 
+   |   |   |   |   |-- St_Thomas                                                # 
+   |   |   |   |   |-- St_Lucia                                                 # 
+   |   |   |   |   |-- St_Kitts                                                 # 
+   |   |   |   |   |-- St_Johns                                                 # 
+   |   |   |   |   |-- St_Barthelemy                                            # 
+   |   |   |   |   |-- Sitka                                                    # 
+   |   |   |   |   |-- Shiprock                                                 # 
+   |   |   |   |   |-- Scoresbysund                                             # 
+   |   |   |   |   |-- Sao_Paulo                                                # 
+   |   |   |   |   |-- Santo_Domingo                                            # 
+   |   |   |   |   |-- Santiago                                                 # 
+   |   |   |   |   |-- Santa_Isabel                                             # 
+   |   |   |   |   |-- Santarem                                                 # 
+   |   |   |   |   |-- Rosario                                                  # 
+   |   |   |   |   |-- Rio_Branco                                               # 
+   |   |   |   |   |-- Resolute                                                 # 
+   |   |   |   |   |-- Regina                                                   # 
+   |   |   |   |   |-- Recife                                                   # 
+   |   |   |   |   |-- Rankin_Inlet                                             # 
+   |   |   |   |   |-- Rainy_River                                              # 
+   |   |   |   |   |-- Punta_Arenas                                             # 
+   |   |   |   |   |-- Puerto_Rico                                              # 
+   |   |   |   |   |-- Port_of_Spain                                            # 
+   |   |   |   |   |-- Porto_Velho                                              # 
+   |   |   |   |   |-- Porto_Acre                                               # 
+   |   |   |   |   |-- Port-au-Prince                                           # 
+   |   |   |   |   |-- Phoenix                                                  # 
+   |   |   |   |   |-- Paramaribo                                               # 
+   |   |   |   |   |-- Pangnirtung                                              # 
+   |   |   |   |   |-- Panama                                                   # 
+   |   |   |   |   |-- Ojinaga                                                  # 
+   |   |   |   |   |-- Noronha                                                  # 
+   |   |   |   |   |-- Nome                                                     # 
+   |   |   |   |   |-- Nipigon                                                  # 
+   |   |   |   |   |-- New_York                                                 # 
+   |   |   |   |   |-- Nassau                                                   # 
+   |   |   |   |   |-- Montserrat                                               # 
+   |   |   |   |   |-- Montreal                                                 # 
+   |   |   |   |   |-- Montevideo                                               # 
+   |   |   |   |   |-- Monterrey                                                # 
+   |   |   |   |   |-- Moncton                                                  # 
+   |   |   |   |   |-- Miquelon                                                 # 
+   |   |   |   |   |-- Mexico_City                                              # 
+   |   |   |   |   |-- Metlakatla                                               # 
+   |   |   |   |   |-- Merida                                                   # 
+   |   |   |   |   |-- Menominee                                                # 
+   |   |   |   |   |-- Mendoza                                                  # 
+   |   |   |   |   |-- Mazatlan                                                 # 
+   |   |   |   |   |-- Matamoros                                                # 
+   |   |   |   |   |-- Martinique                                               # 
+   |   |   |   |   |-- Marigot                                                  # 
+   |   |   |   |   |-- Manaus                                                   # 
+   |   |   |   |   |-- Managua                                                  # 
+   |   |   |   |   |-- Maceio                                                   # 
+   |   |   |   |   |-- Lower_Princes                                            # 
+   |   |   |   |   |-- Louisville                                               # 
+   |   |   |   |   |-- Los_Angeles                                              # 
+   |   |   |   |   |-- Lima                                                     # 
+   |   |   |   |   |-- La_Paz                                                   # 
+   |   |   |   |   |-- Kralendijk                                               # 
+   |   |   |   |   |-- Knox_IN                                                  # 
+   |   |   |   |   |-- Juneau                                                   # 
+   |   |   |   |   |-- Jujuy                                                    # 
+   |   |   |   |   |-- Jamaica                                                  # 
+   |   |   |   |   |-- Iqaluit                                                  # 
+   |   |   |   |   |-- Inuvik                                                   # 
+   |   |   |   |   |-- Indianapolis                                             # 
+   |   |   |   |   |-- Hermosillo                                               # 
+   |   |   |   |   |-- Havana                                                   # 
+   |   |   |   |   |-- Halifax                                                  # 
+   |   |   |   |   |-- Guyana                                                   # 
+   |   |   |   |   |-- Guayaquil                                                # 
+   |   |   |   |   |-- Guatemala                                                # 
+   |   |   |   |   |-- Guadeloupe                                               # 
+   |   |   |   |   |-- Grenada                                                  # 
+   |   |   |   |   |-- Grand_Turk                                               # 
+   |   |   |   |   |-- Goose_Bay                                                # 
+   |   |   |   |   |-- Godthab                                                  # 
+   |   |   |   |   |-- Glace_Bay                                                # 
+   |   |   |   |   |-- Fort_Wayne                                               # 
+   |   |   |   |   |-- Fort_Nelson                                              # 
+   |   |   |   |   |-- Fortaleza                                                # 
+   |   |   |   |   |-- Ensenada                                                 # 
+   |   |   |   |   |-- El_Salvador                                              # 
+   |   |   |   |   |-- Eirunepe                                                 # 
+   |   |   |   |   |-- Edmonton                                                 # 
+   |   |   |   |   |-- Dominica                                                 # 
+   |   |   |   |   |-- Detroit                                                  # 
+   |   |   |   |   |-- Denver                                                   # 
+   |   |   |   |   |-- Dawson_Creek                                             # 
+   |   |   |   |   |-- Dawson                                                   # 
+   |   |   |   |   |-- Danmarkshavn                                             # 
+   |   |   |   |   |-- Curacao                                                  # 
+   |   |   |   |   |-- Cuiaba                                                   # 
+   |   |   |   |   |-- Creston                                                  # 
+   |   |   |   |   |-- Costa_Rica                                               # 
+   |   |   |   |   |-- Cordoba                                                  # 
+   |   |   |   |   |-- Coral_Harbour                                            # 
+   |   |   |   |   |-- Chihuahua                                                # 
+   |   |   |   |   |-- Chicago                                                  # 
+   |   |   |   |   |-- Cayman                                                   # 
+   |   |   |   |   |-- Cayenne                                                  # 
+   |   |   |   |   |-- Catamarca                                                # 
+   |   |   |   |   |-- Caracas                                                  # 
+   |   |   |   |   |-- Cancun                                                   # 
+   |   |   |   |   |-- Campo_Grande                                             # 
+   |   |   |   |   |-- Cambridge_Bay                                            # 
+   |   |   |   |   |-- Buenos_Aires                                             # 
+   |   |   |   |   |-- Boise                                                    # 
+   |   |   |   |   |-- Bogota                                                   # 
+   |   |   |   |   |-- Boa_Vista                                                # 
+   |   |   |   |   |-- Blanc-Sablon                                             # 
+   |   |   |   |   |-- Belize                                                   # 
+   |   |   |   |   |-- Belem                                                    # 
+   |   |   |   |   |-- Barbados                                                 # 
+   |   |   |   |   |-- Bahia_Banderas                                           # 
+   |   |   |   |   |-- Bahia                                                    # 
+   |   |   |   |   |-- Atka                                                     # 
+   |   |   |   |   |-- Atikokan                                                 # 
+   |   |   |   |   |-- Asuncion                                                 # 
+   |   |   |   |   |-- Aruba                                                    # 
+   |   |   |   |   |-- Araguaina                                                # 
+   |   |   |   |   |-- Antigua                                                  # 
+   |   |   |   |   |-- Anguilla                                                 # 
+   |   |   |   |   |-- Anchorage                                                # 
+   |   |   |   |   `-- Adak                                                     # 
+   |   |   |   |-- Antarctica/                                                  # 「Antarctica」
+   |   |   |   |   |-- Vostok                                                   # 
+   |   |   |   |   |-- Troll                                                    # 
+   |   |   |   |   |-- Syowa                                                    # 
+   |   |   |   |   |-- South_Pole                                               # 
+   |   |   |   |   |-- Rothera                                                  # 
+   |   |   |   |   |-- Palmer                                                   # 
+   |   |   |   |   |-- McMurdo                                                  # 
+   |   |   |   |   |-- Mawson                                                   # 
+   |   |   |   |   |-- Macquarie                                                # 
+   |   |   |   |   |-- DumontDUrville                                           # 
+   |   |   |   |   |-- Davis                                                    # 
+   |   |   |   |   `-- Casey                                                    # 
+   |   |   |   |-- Arctic/                                                      # 「Arctic」
+   |   |   |   |   `-- Longyearbyen                                             # 
+   |   |   |   |-- Asia/                                                        # 「Asia」
+   |   |   |   |   |-- Yerevan                                                  # 
+   |   |   |   |   |-- Yekaterinburg                                            # 
+   |   |   |   |   |-- Yangon                                                   # 
+   |   |   |   |   |-- Yakutsk                                                  # 
+   |   |   |   |   |-- Vladivostok                                              # 
+   |   |   |   |   |-- Vientiane                                                # 
+   |   |   |   |   |-- Ust-Nera                                                 # 
+   |   |   |   |   |-- Urumqi                                                   # 
+   |   |   |   |   |-- Ulan_Bator                                               # 
+   |   |   |   |   |-- Ulaanbaatar                                              # 
+   |   |   |   |   |-- Ujung_Pandang                                            # 
+   |   |   |   |   |-- Tomsk                                                    # 
+   |   |   |   |   |-- Tokyo                                                    # 
+   |   |   |   |   |-- Thimphu                                                  # 
+   |   |   |   |   |-- Thimbu                                                   # 
+   |   |   |   |   |-- Tel_Aviv                                                 # 
+   |   |   |   |   |-- Tehran                                                   # 
+   |   |   |   |   |-- Tbilisi                                                  # 
+   |   |   |   |   |-- Tashkent                                                 # 
+   |   |   |   |   |-- Taipei                                                   # 
+   |   |   |   |   |-- Srednekolymsk                                            # 
+   |   |   |   |   |-- Singapore                                                # 
+   |   |   |   |   |-- Shanghai                                                 # 
+   |   |   |   |   |-- Seoul                                                    # 
+   |   |   |   |   |-- Samarkand                                                # 
+   |   |   |   |   |-- Sakhalin                                                 # 
+   |   |   |   |   |-- Saigon                                                   # 
+   |   |   |   |   |-- Riyadh                                                   # 
+   |   |   |   |   |-- Rangoon                                                  # 
+   |   |   |   |   |-- Qyzylorda                                                # 
+   |   |   |   |   |-- Qatar                                                    # 
+   |   |   |   |   |-- Pyongyang                                                # 
+   |   |   |   |   |-- Pontianak                                                # 
+   |   |   |   |   |-- Phnom_Penh                                               # 
+   |   |   |   |   |-- Oral                                                     # 
+   |   |   |   |   |-- Omsk                                                     # 
+   |   |   |   |   |-- Novosibirsk                                              # 
+   |   |   |   |   |-- Novokuznetsk                                             # 
+   |   |   |   |   |-- Nicosia                                                  # 
+   |   |   |   |   |-- Muscat                                                   # 
+   |   |   |   |   |-- Manila                                                   # 
+   |   |   |   |   |-- Makassar                                                 # 
+   |   |   |   |   |-- Magadan                                                  # 
+   |   |   |   |   |-- Macau                                                    # 
+   |   |   |   |   |-- Macao                                                    # 
+   |   |   |   |   |-- Kuwait                                                   # 
+   |   |   |   |   |-- Kuching                                                  # 
+   |   |   |   |   |-- Kuala_Lumpur                                             # 
+   |   |   |   |   |-- Krasnoyarsk                                              # 
+   |   |   |   |   |-- Kolkata                                                  # 
+   |   |   |   |   |-- Khandyga                                                 # 
+   |   |   |   |   |-- Katmandu                                                 # 
+   |   |   |   |   |-- Kathmandu                                                # 
+   |   |   |   |   |-- Kashgar                                                  # 
+   |   |   |   |   |-- Karachi                                                  # 
+   |   |   |   |   |-- Kamchatka                                                # 
+   |   |   |   |   |-- Kabul                                                    # 
+   |   |   |   |   |-- Jerusalem                                                # 
+   |   |   |   |   |-- Jayapura                                                 # 
+   |   |   |   |   |-- Jakarta                                                  # 
+   |   |   |   |   |-- Istanbul                                                 # 
+   |   |   |   |   |-- Irkutsk                                                  # 
+   |   |   |   |   |-- Ho_Chi_Minh                                              # 
+   |   |   |   |   |-- Hovd                                                     # 
+   |   |   |   |   |-- Hong_Kong                                                # 
+   |   |   |   |   |-- Hebron                                                   # 
+   |   |   |   |   |-- Harbin                                                   # 
+   |   |   |   |   |-- Gaza                                                     # 
+   |   |   |   |   |-- Famagusta                                                # 
+   |   |   |   |   |-- Dushanbe                                                 # 
+   |   |   |   |   |-- Dubai                                                    # 
+   |   |   |   |   |-- Dili                                                     # 
+   |   |   |   |   |-- Dhaka                                                    # 
+   |   |   |   |   |-- Damascus                                                 # 
+   |   |   |   |   |-- Dacca                                                    # 
+   |   |   |   |   |-- Colombo                                                  # 
+   |   |   |   |   |-- Chungking                                                # 
+   |   |   |   |   |-- Chongqing                                                # 
+   |   |   |   |   |-- Choibalsan                                               # 
+   |   |   |   |   |-- Chita                                                    # 
+   |   |   |   |   |-- Calcutta                                                 # 
+   |   |   |   |   |-- Brunei                                                   # 
+   |   |   |   |   |-- Bishkek                                                  # 
+   |   |   |   |   |-- Beirut                                                   # 
+   |   |   |   |   |-- Barnaul                                                  # 
+   |   |   |   |   |-- Bangkok                                                  # 
+   |   |   |   |   |-- Baku                                                     # 
+   |   |   |   |   |-- Bahrain                                                  # 
+   |   |   |   |   |-- Baghdad                                                  # 
+   |   |   |   |   |-- Atyrau                                                   # 
+   |   |   |   |   |-- Ashkhabad                                                # 
+   |   |   |   |   |-- Ashgabat                                                 # 
+   |   |   |   |   |-- Aqtobe                                                   # 
+   |   |   |   |   |-- Aqtau                                                    # 
+   |   |   |   |   |-- Anadyr                                                   # 
+   |   |   |   |   |-- Amman                                                    # 
+   |   |   |   |   |-- Almaty                                                   # 
+   |   |   |   |   `-- Aden                                                     # 
+   |   |   |   |-- Atlantic/                                                    # 「Atlantic」
+   |   |   |   |   |-- St_Helena                                                # 
+   |   |   |   |   |-- Stanley                                                  # 
+   |   |   |   |   |-- South_Georgia                                            # 
+   |   |   |   |   |-- Reykjavik                                                # 
+   |   |   |   |   |-- Madeira                                                  # 
+   |   |   |   |   |-- Jan_Mayen                                                # 
+   |   |   |   |   |-- Faroe                                                    # 
+   |   |   |   |   |-- Faeroe                                                   # 
+   |   |   |   |   |-- Cape_Verde                                               # 
+   |   |   |   |   |-- Canary                                                   # 
+   |   |   |   |   |-- Bermuda                                                  # 
+   |   |   |   |   `-- Azores                                                   # 
+   |   |   |   |-- Australia/                                                   # 「Australia」
+   |   |   |   |   |-- Yancowinna                                               # 
+   |   |   |   |   |-- West                                                     # 
+   |   |   |   |   |-- Victoria                                                 # 
+   |   |   |   |   |-- Tasmania                                                 # 
+   |   |   |   |   |-- Sydney                                                   # 
+   |   |   |   |   |-- South                                                    # 
+   |   |   |   |   |-- Queensland                                               # 
+   |   |   |   |   |-- Perth                                                    # 
+   |   |   |   |   |-- NSW                                                      # 
+   |   |   |   |   |-- North                                                    # 
+   |   |   |   |   |-- Melbourne                                                # 
+   |   |   |   |   |-- Lord_Howe                                                # 
+   |   |   |   |   |-- Lindeman                                                 # 
+   |   |   |   |   |-- LHI                                                      # 
+   |   |   |   |   |-- Hobart                                                   # 
+   |   |   |   |   |-- Eucla                                                    # 
+   |   |   |   |   |-- Darwin                                                   # 
+   |   |   |   |   |-- Currie                                                   # 
+   |   |   |   |   |-- Canberra                                                 # 
+   |   |   |   |   |-- Broken_Hill                                              # 
+   |   |   |   |   |-- Brisbane                                                 # 
+   |   |   |   |   |-- Adelaide                                                 # 
+   |   |   |   |   `-- ACT                                                      # 
+   |   |   |   |-- Brazil/                                                      # 「Brazil」
+   |   |   |   |   |-- West                                                     # 
+   |   |   |   |   |-- East                                                     # 
+   |   |   |   |   |-- DeNoronha                                                # 
+   |   |   |   |   `-- Acre                                                     # 
+   |   |   |   |-- Canada/                                                      # 「Canada」
+   |   |   |   |   |-- Yukon                                                    # 
+   |   |   |   |   |-- Saskatchewan                                             # 
+   |   |   |   |   |-- Pacific                                                  # 
+   |   |   |   |   |-- Newfoundland                                             # 
+   |   |   |   |   |-- Mountain                                                 # 
+   |   |   |   |   |-- Eastern                                                  # 
+   |   |   |   |   |-- East-Saskatchewan                                        # 
+   |   |   |   |   |-- Central                                                  # 
+   |   |   |   |   `-- Atlantic                                                 # 
+   |   |   |   |-- Chile/                                                       # 「Chile」
+   |   |   |   |   |-- EasterIsland                                             # 
+   |   |   |   |   `-- Continental                                              # 
+   |   |   |   |-- Etc/                                                         # 「Etc」
+   |   |   |   |   |-- Zulu                                                     # 
+   |   |   |   |   |-- UTC                                                      # 
+   |   |   |   |   |-- Universal                                                # 
+   |   |   |   |   |-- UCT                                                      # 
+   |   |   |   |   |-- Greenwich                                                # 
+   |   |   |   |   |-- GMT0                                                     # 
+   |   |   |   |   |-- GMT-9                                                    # 
+   |   |   |   |   |-- GMT-8                                                    # 
+   |   |   |   |   |-- GMT-7                                                    # 
+   |   |   |   |   |-- GMT-6                                                    # 
+   |   |   |   |   |-- GMT-5                                                    # 
+   |   |   |   |   |-- GMT-4                                                    # 
+   |   |   |   |   |-- GMT-3                                                    # 
+   |   |   |   |   |-- GMT-2                                                    # 
+   |   |   |   |   |-- GMT-14                                                   # 
+   |   |   |   |   |-- GMT-13                                                   # 
+   |   |   |   |   |-- GMT-12                                                   # 
+   |   |   |   |   |-- GMT-11                                                   # 
+   |   |   |   |   |-- GMT-10                                                   # 
+   |   |   |   |   |-- GMT-1                                                    # 
+   |   |   |   |   |-- GMT-0                                                    # 
+   |   |   |   |   |-- GMT+9                                                    # 
+   |   |   |   |   |-- GMT+8                                                    # 
+   |   |   |   |   |-- GMT+7                                                    # 
+   |   |   |   |   |-- GMT+6                                                    # 
+   |   |   |   |   |-- GMT+5                                                    # 
+   |   |   |   |   |-- GMT+4                                                    # 
+   |   |   |   |   |-- GMT+3                                                    # 
+   |   |   |   |   |-- GMT+2                                                    # 
+   |   |   |   |   |-- GMT+12                                                   # 
+   |   |   |   |   |-- GMT+11                                                   # 
+   |   |   |   |   |-- GMT+10                                                   # 
+   |   |   |   |   |-- GMT+1                                                    # 
+   |   |   |   |   |-- GMT+0                                                    # 
+   |   |   |   |   `-- GMT                                                      # 
+   |   |   |   |-- Europe/                                                      # 「Europe」
+   |   |   |   |   |-- Zurich                                                   # 
+   |   |   |   |   |-- Zaporozhye                                               # 
+   |   |   |   |   |-- Zagreb                                                   # 
+   |   |   |   |   |-- Warsaw                                                   # 
+   |   |   |   |   |-- Volgograd                                                # 
+   |   |   |   |   |-- Vilnius                                                  # 
+   |   |   |   |   |-- Vienna                                                   # 
+   |   |   |   |   |-- Vatican                                                  # 
+   |   |   |   |   |-- Vaduz                                                    # 
+   |   |   |   |   |-- Uzhgorod                                                 # 
+   |   |   |   |   |-- Ulyanovsk                                                # 
+   |   |   |   |   |-- Tiraspol                                                 # 
+   |   |   |   |   |-- Tirane                                                   # 
+   |   |   |   |   |-- Tallinn                                                  # 
+   |   |   |   |   |-- Stockholm                                                # 
+   |   |   |   |   |-- Sofia                                                    # 
+   |   |   |   |   |-- Skopje                                                   # 
+   |   |   |   |   |-- Simferopol                                               # 
+   |   |   |   |   |-- Saratov                                                  # 
+   |   |   |   |   |-- Sarajevo                                                 # 
+   |   |   |   |   |-- San_Marino                                               # 
+   |   |   |   |   |-- Samara                                                   # 
+   |   |   |   |   |-- Rome                                                     # 
+   |   |   |   |   |-- Riga                                                     # 
+   |   |   |   |   |-- Prague                                                   # 
+   |   |   |   |   |-- Podgorica                                                # 
+   |   |   |   |   |-- Paris                                                    # 
+   |   |   |   |   |-- Oslo                                                     # 
+   |   |   |   |   |-- Nicosia                                                  # 
+   |   |   |   |   |-- Moscow                                                   # 
+   |   |   |   |   |-- Monaco                                                   # 
+   |   |   |   |   |-- Minsk                                                    # 
+   |   |   |   |   |-- Mariehamn                                                # 
+   |   |   |   |   |-- Malta                                                    # 
+   |   |   |   |   |-- Madrid                                                   # 
+   |   |   |   |   |-- Luxembourg                                               # 
+   |   |   |   |   |-- London                                                   # 
+   |   |   |   |   |-- Ljubljana                                                # 
+   |   |   |   |   |-- Lisbon                                                   # 
+   |   |   |   |   |-- Kirov                                                    # 
+   |   |   |   |   |-- Kiev                                                     # 
+   |   |   |   |   |-- Kaliningrad                                              # 
+   |   |   |   |   |-- Jersey                                                   # 
+   |   |   |   |   |-- Istanbul                                                 # 
+   |   |   |   |   |-- Isle_of_Man                                              # 
+   |   |   |   |   |-- Helsinki                                                 # 
+   |   |   |   |   |-- Guernsey                                                 # 
+   |   |   |   |   |-- Gibraltar                                                # 
+   |   |   |   |   |-- Dublin                                                   # 
+   |   |   |   |   |-- Copenhagen                                               # 
+   |   |   |   |   |-- Chisinau                                                 # 
+   |   |   |   |   |-- Busingen                                                 # 
+   |   |   |   |   |-- Budapest                                                 # 
+   |   |   |   |   |-- Bucharest                                                # 
+   |   |   |   |   |-- Brussels                                                 # 
+   |   |   |   |   |-- Bratislava                                               # 
+   |   |   |   |   |-- Berlin                                                   # 
+   |   |   |   |   |-- Belgrade                                                 # 
+   |   |   |   |   |-- Belfast                                                  # 
+   |   |   |   |   |-- Athens                                                   # 
+   |   |   |   |   |-- Astrakhan                                                # 
+   |   |   |   |   |-- Andorra                                                  # 
+   |   |   |   |   `-- Amsterdam                                                # 
+   |   |   |   |-- Indian/                                                      # 「Indian」
+   |   |   |   |   |-- Reunion                                                  # 
+   |   |   |   |   |-- Mayotte                                                  # 
+   |   |   |   |   |-- Mauritius                                                # 
+   |   |   |   |   |-- Maldives                                                 # 
+   |   |   |   |   |-- Mahe                                                     # 
+   |   |   |   |   |-- Kerguelen                                                # 
+   |   |   |   |   |-- Comoro                                                   # 
+   |   |   |   |   |-- Cocos                                                    # 
+   |   |   |   |   |-- Christmas                                                # 
+   |   |   |   |   |-- Chagos                                                   # 
+   |   |   |   |   `-- Antananarivo                                             # 
+   |   |   |   |-- Mexico/                                                      # 「Mexico」
+   |   |   |   |   |-- General                                                  # 
+   |   |   |   |   |-- BajaSur                                                  # 
+   |   |   |   |   `-- BajaNorte                                                # 
+   |   |   |   |-- Pacific/                                                     # 「Pacific」
+   |   |   |   |   |-- Yap                                                      # 
+   |   |   |   |   |-- Wallis                                                   # 
+   |   |   |   |   |-- Wake                                                     # 
+   |   |   |   |   |-- Truk                                                     # 
+   |   |   |   |   |-- Tongatapu                                                # 
+   |   |   |   |   |-- Tarawa                                                   # 
+   |   |   |   |   |-- Tahiti                                                   # 
+   |   |   |   |   |-- Samoa                                                    # 
+   |   |   |   |   |-- Saipan                                                   # 
+   |   |   |   |   |-- Rarotonga                                                # 
+   |   |   |   |   |-- Port_Moresby                                             # 
+   |   |   |   |   |-- Ponape                                                   # 
+   |   |   |   |   |-- Pohnpei                                                  # 
+   |   |   |   |   |-- Pitcairn                                                 # 
+   |   |   |   |   |-- Palau                                                    # 
+   |   |   |   |   |-- Pago_Pago                                                # 
+   |   |   |   |   |-- Noumea                                                   # 
+   |   |   |   |   |-- Norfolk                                                  # 
+   |   |   |   |   |-- Niue                                                     # 
+   |   |   |   |   |-- Nauru                                                    # 
+   |   |   |   |   |-- Midway                                                   # 
+   |   |   |   |   |-- Marquesas                                                # 
+   |   |   |   |   |-- Majuro                                                   # 
+   |   |   |   |   |-- Kwajalein                                                # 
+   |   |   |   |   |-- Kosrae                                                   # 
+   |   |   |   |   |-- Kiritimati                                               # 
+   |   |   |   |   |-- Johnston                                                 # 
+   |   |   |   |   |-- Honolulu                                                 # 
+   |   |   |   |   |-- Guam                                                     # 
+   |   |   |   |   |-- Guadalcanal                                              # 
+   |   |   |   |   |-- Gambier                                                  # 
+   |   |   |   |   |-- Galapagos                                                # 
+   |   |   |   |   |-- Funafuti                                                 # 
+   |   |   |   |   |-- Fiji                                                     # 
+   |   |   |   |   |-- Fakaofo                                                  # 
+   |   |   |   |   |-- Enderbury                                                # 
+   |   |   |   |   |-- Efate                                                    # 
+   |   |   |   |   |-- Easter                                                   # 
+   |   |   |   |   |-- Chuuk                                                    # 
+   |   |   |   |   |-- Chatham                                                  # 
+   |   |   |   |   |-- Bougainville                                             # 
+   |   |   |   |   |-- Auckland                                                 # 
+   |   |   |   |   `-- Apia                                                     # 
+   |   |   |   |-- SystemV/                                                     # 「SystemV」
+   |   |   |   |   |-- YST9YDT                                                  # 
+   |   |   |   |   |-- YST9                                                     # 
+   |   |   |   |   |-- PST8PDT                                                  # 
+   |   |   |   |   |-- PST8                                                     # 
+   |   |   |   |   |-- MST7MDT                                                  # 
+   |   |   |   |   |-- MST7                                                     # 
+   |   |   |   |   |-- HST10                                                    # 
+   |   |   |   |   |-- EST5EDT                                                  # 
+   |   |   |   |   |-- EST5                                                     # 
+   |   |   |   |   |-- CST6CDT                                                  # 
+   |   |   |   |   |-- CST6                                                     # 
+   |   |   |   |   |-- AST4ADT                                                  # 
+   |   |   |   |   `-- AST4                                                     # 
+   |   |   |   |-- US/                                                          # 「US」
+   |   |   |   |   |-- Samoa                                                    # 
+   |   |   |   |   |-- Pacific-New                                              # 
+   |   |   |   |   |-- Pacific                                                  # 
+   |   |   |   |   |-- Mountain                                                 # 
+   |   |   |   |   |-- Michigan                                                 # 
+   |   |   |   |   |-- Indiana-Starke                                           # 
+   |   |   |   |   |-- Hawaii                                                   # 
+   |   |   |   |   |-- Eastern                                                  # 
+   |   |   |   |   |-- East-Indiana                                             # 
+   |   |   |   |   |-- Central                                                  # 
+   |   |   |   |   |-- Arizona                                                  # 
+   |   |   |   |   |-- Aleutian                                                 # 
+   |   |   |   |   `-- Alaska                                                   # 
+   |   |   |   |-- Zulu                                                         # 
+   |   |   |   |-- WET                                                          # 
+   |   |   |   |-- W-SU                                                         # 
+   |   |   |   |-- UTC                                                          # 
+   |   |   |   |-- Universal                                                    # 
+   |   |   |   |-- UCT                                                          # 
+   |   |   |   |-- Turkey                                                       # 
+   |   |   |   |-- Singapore                                                    # 
+   |   |   |   |-- ROK                                                          # 
+   |   |   |   |-- ROC                                                          # 
+   |   |   |   |-- PST8PDT                                                      # 
+   |   |   |   |-- PRC                                                          # 
+   |   |   |   |-- Portugal                                                     # 
+   |   |   |   |-- Poland                                                       # 
+   |   |   |   |-- NZ-CHAT                                                      # 
+   |   |   |   |-- NZ                                                           # 
+   |   |   |   |-- Navajo                                                       # 
+   |   |   |   |-- MST7MDT                                                      # 
+   |   |   |   |-- MST                                                          # 
+   |   |   |   |-- MET                                                          # 
+   |   |   |   |-- Libya                                                        # 
+   |   |   |   |-- Kwajalein                                                    # 
+   |   |   |   |-- Japan                                                        # 
+   |   |   |   |-- Jamaica                                                      # 
+   |   |   |   |-- Israel                                                       # 
+   |   |   |   |-- Iran                                                         # 
+   |   |   |   |-- Iceland                                                      # 
+   |   |   |   |-- HST                                                          # 
+   |   |   |   |-- Hongkong                                                     # 
+   |   |   |   |-- Greenwich                                                    # 
+   |   |   |   |-- GMT0                                                         # 
+   |   |   |   |-- GMT-0                                                        # 
+   |   |   |   |-- GMT+0                                                        # 
+   |   |   |   |-- GMT                                                          # 
+   |   |   |   |-- GB-Eire                                                      # 
+   |   |   |   |-- GB                                                           # 
+   |   |   |   |-- EST5EDT                                                      # 
+   |   |   |   |-- EST                                                          # 
+   |   |   |   |-- Eire                                                         # 
+   |   |   |   |-- Egypt                                                        # 
+   |   |   |   |-- EET                                                          # 
+   |   |   |   |-- Cuba                                                         # 
+   |   |   |   |-- CST6CDT                                                      # 
+   |   |   |   `-- CET                                                          # 
+   |   |   |-- word.tcl                                                         # 
+   |   |   |-- tm.tcl                                                           # 
+   |   |   |-- tclIndex                                                         # 
+   |   |   |-- safe.tcl                                                         # 
+   |   |   |-- parray.tcl                                                       # 
+   |   |   |-- package.tcl                                                      # 
+   |   |   |-- init.tcl                                                         # 
+   |   |   |-- history.tcl                                                      # 
+   |   |   |-- clock.tcl                                                        # 
+   |   |   `-- auto.tcl                                                         # 
+   |   |-- tcl8/                                                                # 「tcl8」
+   |   |   |-- 8.4/                                                             # 
+   |   |   |   |-- platform/                                                    # 「platform」
+   |   |   |   |   `-- shell-1.1.4.tm                                           # 
+   |   |   |   `-- platform-1.0.14.tm                                           # 
+   |   |   |-- 8.5/                                                             # 
+   |   |   |   |-- tcltest-2.5.0.tm                                             # 
+   |   |   |   `-- msgcat-1.6.1.tm                                              # 
+   |   |   |-- 8.6/                                                             # 
+   |   |   |   `-- http-2.9.0.tm                                                # 
+   |   |-- tk/                                                                  # 「tk」
+   |   |   |-- images/                                                          # 「images」
+   |   |   |   |-- tai-ku.gif                                                   # 
+   |   |   |   |-- README                                                       # 
+   |   |   |   |-- pwrdLogo75.gif                                               # 
+   |   |   |   |-- pwrdLogo200.gif                                              # 
+   |   |   |   |-- pwrdLogo175.gif                                              # 
+   |   |   |   |-- pwrdLogo150.gif                                              # 
+   |   |   |   |-- pwrdLogo100.gif                                              # 
+   |   |   |   |-- pwrdLogo.eps                                                 # 
+   |   |   |   |-- logoMed.gif                                                  # 
+   |   |   |   |-- logoLarge.gif                                                # 
+   |   |   |   |-- logo64.gif                                                   # 
+   |   |   |   |-- logo100.gif                                                  # 
+   |   |   |   `-- logo.eps                                                     # 
+   |   |   |-- msgs/                                                            # 「msgs」
+   |   |   |   |-- sv.msg                                                       # 
+   |   |   |   |-- ru.msg                                                       # 
+   |   |   |   |-- pt.msg                                                       # 
+   |   |   |   |-- pl.msg                                                       # 
+   |   |   |   |-- nl.msg                                                       # 
+   |   |   |   |-- it.msg                                                       # 
+   |   |   |   |-- hu.msg                                                       # 
+   |   |   |   |-- fr.msg                                                       # 
+   |   |   |   |-- es.msg                                                       # 
+   |   |   |   |-- eo.msg                                                       # 
+   |   |   |   |-- en_gb.msg                                                    # 
+   |   |   |   |-- en.msg                                                       # 
+   |   |   |   |-- el.msg                                                       # 
+   |   |   |   |-- de.msg                                                       # 
+   |   |   |   |-- da.msg                                                       # 
+   |   |   |   `-- cs.msg                                                       # 
+   |   |   |-- ttk/                                                             # 「ttk」
+   |   |   |   |-- xpTheme.tcl                                                  # 
+   |   |   |   |-- winTheme.tcl                                                 # 
+   |   |   |   |-- vistaTheme.tcl                                               # 
+   |   |   |   |-- utils.tcl                                                    # 
+   |   |   |   |-- ttk.tcl                                                      # 
+   |   |   |   |-- treeview.tcl                                                 # 
+   |   |   |   |-- spinbox.tcl                                                  # 
+   |   |   |   |-- sizegrip.tcl                                                 # 
+   |   |   |   |-- scrollbar.tcl                                                # 
+   |   |   |   |-- scale.tcl                                                    # 
+   |   |   |   |-- progress.tcl                                                 # 
+   |   |   |   |-- panedwindow.tcl                                              # 
+   |   |   |   |-- notebook.tcl                                                 # 
+   |   |   |   |-- menubutton.tcl                                               # 
+   |   |   |   |-- fonts.tcl                                                    # 
+   |   |   |   |-- entry.tcl                                                    # 
+   |   |   |   |-- defaults.tcl                                                 # 
+   |   |   |   |-- cursors.tcl                                                  # 
+   |   |   |   |-- combobox.tcl                                                 # 
+   |   |   |   |-- classicTheme.tcl                                             # 
+   |   |   |   |-- clamTheme.tcl                                                # 
+   |   |   |   |-- button.tcl                                                   # 
+   |   |   |   |-- aquaTheme.tcl                                                # 
+   |   |   |   `-- altTheme.tcl                                                 # 
+   |   |   |-- xmfbox.tcl                                                       # 
+   |   |   |-- unsupported.tcl                                                  # 
+   |   |   |-- tkfbox.tcl                                                       # 
+   |   |   |-- tk.tcl                                                           # 
+   |   |   |-- text.tcl                                                         # 
+   |   |   |-- tearoff.tcl                                                      # 
+   |   |   |-- tclIndex                                                         # 
+   |   |   |-- spinbox.tcl                                                      # 
+   |   |   |-- scrlbar.tcl                                                      # 
+   |   |   |-- scale.tcl                                                        # 
+   |   |   |-- safetk.tcl                                                       # 
+   |   |   |-- pkgIndex.tcl                                                     # 
+   |   |   |-- panedwindow.tcl                                                  # 
+   |   |   |-- palette.tcl                                                      # 
+   |   |   |-- optMenu.tcl                                                      # 
+   |   |   |-- obsolete.tcl                                                     # 
+   |   |   |-- msgbox.tcl                                                       # 
+   |   |   |-- mkpsenc.tcl                                                      # 
+   |   |   |-- menu.tcl                                                         # 
+   |   |   |-- megawidget.tcl                                                   # 
+   |   |   |-- listbox.tcl                                                      # 
+   |   |   |-- license.terms                                                    # 
+   |   |   |-- icons.tcl                                                        # 
+   |   |   |-- iconlist.tcl                                                     # 
+   |   |   |-- fontchooser.tcl                                                  # 
+   |   |   |-- focus.tcl                                                        # 
+   |   |   |-- entry.tcl                                                        # 
+   |   |   |-- dialog.tcl                                                       # 
+   |   |   |-- console.tcl                                                      # 
+   |   |   |-- comdlg.tcl                                                       # 
+   |   |   |-- clrpick.tcl                                                      # 
+   |   |   |-- choosedir.tcl                                                    # 
+   |   |   |-- button.tcl                                                       # 
+   |   |   `-- bgerror.tcl                                                      # 
+   |   |-- _win32sysloader.pyd                                                  # 
+   |   |-- _tkinter.pyd                                                         # 
+   |   |-- _ssl.pyd                                                             # 
+   |   |-- _socket.pyd                                                          # 
+   |   |-- _queue.pyd                                                           # 
+   |   |-- _multiprocessing.pyd                                                 # 
+   |   |-- _lzma.pyd                                                            # 
+   |   |-- _hashlib.pyd                                                         # 
+   |   |-- _decimal.pyd                                                         # 
+   |   |-- _ctypes.pyd                                                          # 
+   |   |-- _bz2.pyd                                                             # 
+   |   |-- win32wnet.pyd                                                        # 
+   |   |-- win32ui.pyd                                                          # 
+   |   |-- win32api.pyd                                                         # 
+   |   |-- vcruntime140_1.dll                                                   # 
+   |   |-- vcruntime140.dll                                                     # 
+   |   |-- unicodedata.pyd                                                      # 
+   |   |-- tk86t.dll                                                            # 
+   |   |-- tcl86t.dll                                                           # 
+   |   |-- select.pyd                                                           # 
+   |   |-- pywintypes38.dll                                                     # 
+   |   |-- pythoncom38.dll                                                      # 
+   |   |-- python38.dll                                                         # 
+   |   |-- pyexpat.pyd                                                          # 
+   |   |-- mfc140u.dll                                                          # 
+   |   |-- main.exe                                                             # 
+   |   |-- libssl-1_1.dll                                                       # 
+   |   |-- libffi-7.dll                                                         # 
+   |   `-- libcrypto-1_1.dll                                                    # 
+   |-- main.onefile-build/                                                      # 
+   |   |-- static_src/                                                          # 「static_src」
+   |   |   |-- OnefileBootstrap.obj                                             # 
+   |   |   `-- OnefileBootstrap.cpp                                             # 
+   |   |-- __payload.bin                                                        # 
+   |   |-- scons-report.txt                                                     # 
+   |   |-- scons-debug.py                                                       # 
+   |   |-- scons-debug.bat                                                      # 
+   |   |-- onefile_definitions.h                                                # 
+   |   |-- clcache-stats.15252.txt                                              # 
+   |   |-- .sconsign-38.dblite                                                  # 
+   |   `-- .gitignore                                                           # 
+   `-- main.exe                                                                 # 
+   |-- setup/                                                                   # 「setup」
+   |-- 测试脚本.bat                                                                 # 
+   |-- 注册为普通目录右键菜单.bat                                                          # 
+   |-- 【指定文件】右键菜单.bat                                                           # 
+   |-- 【任意目录】右键菜单.bat                                                           # 
+   `-- 【任意文件】右键菜单.bat                                                           # 
+   |-- src/                                                                     # 「src」
+   |-- config/                                                                  # 「config」
+   |   |-- __init__.py                                                          # 
+   |   `-- parser.py                                                            # 
+   |-- events/                                                                  # 「events」
+   |   |-- __init__.py                                                          # 
+   |   `-- configEditorEvents.py                                                # 
+   |-- pdf2img/                                                                 # 「pdf2img」
+   |   |-- page_001.jpg                                                         # 
+   |   |-- mupdf.py                                                             # 
+   |   `-- .page-0.jpg                                                          # 
+   |-- python_file_scripts/                                                     # 「python_file_scripts」
+   |   `-- __init__.py                                                          # 
+   |-- ui/                                                                      # 「ui」
+   |   |-- main.py                                                              # 
+   |   `-- configEditor.py                                                      # 
+   |-- utils/                                                                   # 「utils」
+   |   |-- __init__.py                                                          # 
+   |   `-- tk_utils.py                                                          # 
+   |-- word2pdf/                                                                # 「word2pdf」
+   |   |-- __init__.py                                                          # 
+   |   `-- word_to_pdf_by_word.py                                               # 
+   |-- __init__.py                                                              # 
+   |-- Types.py                                                                 # 
+   |-- test.py                                                                  # 
+   |-- reg_manager.py                                                           # 
+   |-- pdf_mamanger.py                                                          # 
+   |-- main_launcher.py                                                         # 
+   |-- main.py                                                                  # 
+   `-- configEditor_launcher.py                                                 # 
+   |-- tests/                                                                   # 「tests」
+   `-- __init__.py                                                              # 
+   |-- ui/                                                                      # 「ui」
+   |-- main.frm                                                                 # 
+   `-- configEditor.frm                                                         # 
+   |-- win7_support/                                                            # 「win7_support」
+   `-- win7_environment_dependent.7z                                            # 
+   |-- README.md                                                                # 
+   |-- pyproject.toml                                                           # 
+   |-- pdm.lock                                                                 # 
+   |-- nuitka-crash-report.xml                                                  # 
+   |-- main.py                                                                  # 
+   |-- dev.bat                                                                  # 
+   |-- build.bat                                                                # 
+   |-- .pdm-python                                                              # 
+   `-- .gitignore                                                               # 
