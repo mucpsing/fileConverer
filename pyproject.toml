@@ -11,6 +11,8 @@ dependencies = [
     "nuitka>=2.3",
     "pydantic>=2.7.4",
     "pypdf>=4.3.1",
+    "pymupdf>=1.24.11",
+    "pillow>=10.4.0",
 ]
 requires-python = "==3.8.*"
 readme = "README.md"

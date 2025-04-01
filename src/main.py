@@ -15,12 +15,20 @@ sys.path.append("..")
 
 from os import path
 from pathlib import Path
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from typing import List, Tuple
 
-from src.pdf_mamanger import merge_pdfs
-from src.word2pdf.word_to_pdf_by_word import CpsWordConverter, CpsWordConverterConfig
+from src.utils.pdf import merge_pdfs, export_pdf_to_paper_size
+from src.utils.word import CpsWordConverter, CpsWordConverterConfig
+
+
+class WordToImgConfig:
+    output_name: str = Field(None, description="指定名称输出")
+
+
+def word_to_img(word_file: str, output_dir: str, config: WordToImgConfig):
+    pass
 
 
 def file_list_handler(file_list: List[str], output_dir: str = None):
@@ -28,6 +36,7 @@ def file_list_handler(file_list: List[str], output_dir: str = None):
     word_list = []
     # 查找pdf文件
     pdf_list = []
+
     for each_file in file_list:
         if each_file.endswith(".docx"):
             word_list.append(each_file)

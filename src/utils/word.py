@@ -27,6 +27,7 @@ class WORD_CODE:  # 记录所有word代码
 class CpsWordConverterConfig(BaseModel):
     overwrite: bool = Field(False, description="如果文件已存在，是否覆盖输出")
     show_details: bool = Field(False, description="是否打印错误")
+    engine:str = Field('ms_office', description="使用什么引擎，默认使用系统自带的ms office word")
 
 
 class CpsWordConverter:
@@ -196,11 +197,15 @@ def example():
     Convert.convert(target)
 
 
-def main(target: str):
-    Config = CpsWordConverterConfig(overwrite=False, show_details=True)
-    Convert = CpsWordConverter(Config)
-    Convert.convert(target)
+def main(config):
 
+    word_config = CpsWordConverterConfig(overwrite=False, show_details=True)
+
+    Convert = CpsWordConverter(word_config)
+    Convert.convert(config.target)
+
+    if config.type == 'pdf':
+        
 
 if __name__ == "__main__":
     # example()

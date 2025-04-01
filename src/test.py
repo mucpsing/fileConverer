@@ -17,9 +17,6 @@ from os import path
 from pathlib import Path
 from pydantic import BaseModel
 
-if __name__ == "__main__":
-    pass
-
 
 import socket
 import time
